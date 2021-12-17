@@ -1,0 +1,63 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Jennife Reid"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Jennife Reid",
+      "timestamp_ms": 1638938836684,
+      "content": "Where you located at?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1638799759854,
+      "content": "Yes",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jennife Reid",
+      "timestamp_ms": 1638727997271,
+      "content": "Jennife Reid sent you a message about your listing: Sony a7ii.",
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jennife Reid",
+      "timestamp_ms": 1638727994394,
+      "content": "Hi Tobias, is this still available?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jennife Reid",
+      "timestamp_ms": 1638727991515,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jennife Reid",
+      "timestamp_ms": 1638727991151,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Jennife \u00c2\u00b7 Sony a7ii",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "filtered_threads/jennifesonya7ii_ivd3zmgpvg",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/262199921_876030946440463_6847853761553591657_n_329835035286648.jpg",
+    "creation_timestamp": 1638727988
+  }
+}

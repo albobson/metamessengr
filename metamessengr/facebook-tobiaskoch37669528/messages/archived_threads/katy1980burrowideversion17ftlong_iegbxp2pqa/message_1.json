@@ -1,0 +1,56 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Katy Aversenti Schumaker"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Katy Aversenti Schumaker",
+      "timestamp_ms": 1595473013281,
+      "content": "I might be! I have 2 weeks off then and not sure where I'll be! But I will check in, unless your sister can show it this weekend! Thanks for reply!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1595470421887,
+      "content": "Hello Katy! I am actually going to be in Seattle to show it personally on the weekend of August 5th. Would you be available then?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katy Aversenti Schumaker",
+      "timestamp_ms": 1595448119337,
+      "content": "I am interested in this. Can I go see it this weekend? Thanks!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katy Aversenti Schumaker",
+      "timestamp_ms": 1595448117804,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katy Aversenti Schumaker",
+      "timestamp_ms": 1595448117624,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Katy \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/katy1980burrowideversion17ftlong_iegbxp2pqa",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/106278191_10157178402340069_3987089004351466521_n_281699286419966.jpg",
+    "creation_timestamp": 1595448116
+  }
+}

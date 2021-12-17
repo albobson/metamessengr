@@ -1,0 +1,63 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Marty Peters"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Marty Peters",
+      "timestamp_ms": 1604775241582,
+      "content": "Thanks for the information.  It's not what I'm looking for.  Have a great day.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604775046800,
+      "content": "It's a Johnson the model on the inside says JG 608 RD",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Marty Peters",
+      "timestamp_ms": 1604773403051,
+      "content": "Reply with your custom message?",
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Marty Peters",
+      "timestamp_ms": 1604773401549,
+      "content": "What is the brand and model?  It should be on the label inside the sound hole.  Also, there appears to be a logo on the head stock.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Marty Peters",
+      "timestamp_ms": 1604773400243,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Marty Peters",
+      "timestamp_ms": 1604773400068,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Marty \u00c2\u00b7 guitar",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/martyguitar_-72nu1idyg",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/122763901_10157438014235069_7409486727465562381_n_831446077649948.jpg",
+    "creation_timestamp": 1604773399
+  }
+}

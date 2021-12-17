@@ -1,0 +1,63 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Aimee Smith"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Aimee Smith",
+      "timestamp_ms": 1594954494449,
+      "content": "\u00f0\u009f\u0091\u008c",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1594952034354,
+      "content": "Hello! Sorry there is someone currently planning on buying it but if that falls through I will let you know!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aimee Smith",
+      "timestamp_ms": 1594813581555,
+      "content": "Aimee is waiting for your response.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aimee Smith",
+      "timestamp_ms": 1594790381253,
+      "content": "Is this still available?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aimee Smith",
+      "timestamp_ms": 1594790379864,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aimee Smith",
+      "timestamp_ms": 1594790379452,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Aimee \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/aimee1980burrowideversion17ftlong_xi9sqjydja",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/79250944_10157178402145069_7685757313421880092_n_594075201522644.jpg",
+    "creation_timestamp": 1594790378
+  }
+}

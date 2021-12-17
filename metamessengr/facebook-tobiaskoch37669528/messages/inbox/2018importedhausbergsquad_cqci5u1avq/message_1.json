@@ -1,0 +1,927 @@
+{
+  "participants": [
+    {
+      "name": "Parker Lehman"
+    },
+    {
+      "name": "Smythe Eddy"
+    },
+    {
+      "name": "Spencer Dusso"
+    },
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Beau Blessing"
+    },
+    {
+      "name": "Ernest Moelhman"
+    },
+    {
+      "name": "Abigail Maiden Moffitt"
+    },
+    {
+      "name": "Leo Thom"
+    },
+    {
+      "name": "Eva Yguico"
+    },
+    {
+      "name": "Kruz Toribio"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Ernest Moelhman",
+      "timestamp_ms": 1545388968059,
+      "content": "Pretty sure the check at the cash cage was our first paycheck",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Kruz Toribio",
+      "timestamp_ms": 1545063402990,
+      "content": "I just got an earnings and leave statement",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1545060900443,
+      "content": "Cool thanks",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Kruz Toribio",
+      "timestamp_ms": 1545060878146,
+      "content": "Yes, i believe they close at 5",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1545060653915,
+      "content": "Yess is the mail place open right now?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1545060637353,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Spencer Dusso",
+      "timestamp_ms": 1545060628466,
+      "content": "If you haven't checked your mail we got our travel checks.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1544800301391,
+      "content": "I am!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1544785333143,
+      "content": "Is anyone going to the Ski Movie tonight?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1544194656453,
+      "content": "Danke",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544194640549,
+      "content": "Dave forgot to mention that to a couple of us",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544194628076,
+      "content": "For people doing epay- when it asks for Email ID you need to put \"epay.payroll@edelweisslodgeandresort.com\"",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1544179653013,
+      "content": "I pushed the security botton at the entrance of the dorms last week when I locked myself out. They sent someone over, but not sure who\u00e2\u0080\u0099d re-key a bad card. Dans in the building.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544179644823,
+      "content": "Pretty sure they said to call security but you could message dannon too probably",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1544179518430,
+      "content": "If our room key doesn\u00e2\u0080\u0099t work do we call Dannon or security?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1544120857712,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1544112708961,
+      "content": "Cool just got ours too",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1544087670855,
+      "content": "I just booked 9 dec to 10 dec in 10 person mixed.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Eva Yguico"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1544083150296,
+      "content": "got my booking. still 3 spots available in the 10-person",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1544083110309,
+      "content": "Get either 8 person or ten person room at the wombat hostel. We were going to buy it but forgot last night.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1544080911894,
+      "content": "Beau\u00e2\u0080\u0099s good for same travel times; I think I have the same schedule Sunday and Tuesday as y\u00e2\u0080\u0099all. Butt did you book Hostel already? I guess I should get on that right away?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544076045870,
+      "content": "I'm going to hit the early one!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1544038484732,
+      "content": "I\u00e2\u0080\u0099m in!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Ernest Moelhman",
+      "timestamp_ms": 1544034688162,
+      "content": "Same ;___;",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1544034595379,
+      "content": "Awe I wish but I work :/",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1544034029855,
+      "content": "So Toby, Eva and I are planning a trip to munich on the 9th after work at 1230 to do this krampus thing. Apparently you can buy a 5 person train pass and it's cheaper per person. Anyone else interested? We're planning on staying at that wombats hostel in one of the dorms (it's like 16 euro for a night) and heading out Monday evening after some munich exploring..",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544028520684,
+      "content": "Down to go early but cool with 9:17 as well.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544028377934,
+      "sticker": {
+        "uri": "messages/stickers_used/851587_369239346556147_162929011_n_369239343222814.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1544028310607,
+      "content": "Either the 8:17 or 9:17 train",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544028191339,
+      "content": "Also- people still planning on hitting the zugspitz tomorrow? What time are ya'll heading out?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1544024541937,
+      "content": "it goes till 6:15",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1544024392394,
+      "content": "Ya'll know the staff caf evening hours?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543870896134,
+      "content": "dArN \u00f0\u009f\u0098\u0090",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543870877494,
+      "content": "the signs at least",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543870871565,
+      "content": "Ja",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543870771972,
+      "content": "Did yallmst study at all?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1543870746756,
+      "content": "thanks!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543870732191,
+      "content": "I think they said it\u00e2\u0080\u0099s the building across from the gas station and next to where we got our Ids",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543870730430,
+      "content": "Someone told me it was near the gas station",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Spencer Dusso",
+      "timestamp_ms": 1543870692348,
+      "content": "Not positive but i believe there are signs up that point us in the right direction",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1543870534356,
+      "content": "where do we go for the drivers  test tomorrow?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543836684482,
+      "content": "I feel like I remember them saying they would leave one here and take some over to hausberg?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543829543874,
+      "content": "Ok. Yeah I\u00e2\u0080\u0099m not really sure how that works",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543829504575,
+      "content": "@Eva well shoot! If you still want to meet up I\u00e2\u0080\u0099m about to head out!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543829474310,
+      "content": "I went and looked on the rack yesterday and nothing was there so I\u00e2\u0080\u0099m not sure",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543829457144,
+      "content": "Or doth that get dropped off?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1543829449024,
+      "content": "darn, she\u00e2\u0080\u0099s at work \u00f0\u009f\u0098\u0095 @Abigail",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543829443284,
+      "content": "Yooo has anyone picked up their uniform yet?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1543829211693,
+      "content": "lmk check w her",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Abigail Maiden Moffitt"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543829159225,
+      "content": "Oh shoot! Is your roommate home? I could grab it",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1543829126304,
+      "content": "whoops didn\u00e2\u0080\u0099t bring my passport. @Abigail looks like i\u00e2\u0080\u0099m getting my phone plan another time \u00f0\u009f\u0098\u0085",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Kruz Toribio",
+      "timestamp_ms": 1543828898418,
+      "content": "Make sure you take your passports with you",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543828847901,
+      "content": "I\u00e2\u0080\u0099m gonna leave in about 10 minutes.. @Eva, would you want to meet at Vodafone? It looks like it\u00e2\u0080\u0099s next to Conrad\u00e2\u0080\u0099s",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543825693157,
+      "content": "I was thinking of heading down in about an hour?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Eva Yguico"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Eva Yguico",
+      "timestamp_ms": 1543825426739,
+      "content": "i\u00e2\u0080\u0099m in town right now so message me whenever ur headed over!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543824280178,
+      "content": "When would you be going?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Ernest Moelhman",
+      "timestamp_ms": 1543816349102,
+      "content": "Yeee",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543790049110,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543790038518,
+      "content": "Does anyone need to get a phone plan? I was thinking of going tomorrow and figuring it out if anyone would like to join!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543743952735,
+      "gifs": [
+        {
+          "uri": "messages/inbox/2018importedhausbergsquad_cqci5u1avq/gifs/44490525_243853672954466_5656563153937367040_n_358128964944147.gif"
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Ernest Moelhman"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543742802499,
+      "content": "hire*",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543742739093,
+      "content": "Don't higher me as a sherpa \u00f0\u009f\u0098\u0085",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543742716276,
+      "content": "You were 100% right about the mountains right in front there not being the Zugspitze haha. That's the waxenstein, the Zugspitze is much higher/further back",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543742579149,
+      "content": "@Tobias I owe you a beer..",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543699186742,
+      "content": "Bargain, and 14:40 works. Room could be tricky? Keep me posted and ttyl",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543699030750,
+      "content": "Sweet! We found a bus on that flixbus app that leaves at 240 I believe on the 9th it's about 10 euro one way for one person",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543698614538,
+      "content": "Toby and Smythe! Just connected that 9th is Munich\u00e2\u0080\u0099s rowdy krampas and checked my schedule, so heck yeah I\u00e2\u0080\u0099d want to join you guys if you go. Probably safer in a group if anyone else has the schedule to swing it; I don\u00e2\u0080\u0099t want to be drug away for being bad! ;)",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Spencer Dusso",
+      "timestamp_ms": 1543693116287,
+      "content": "Beau and I were thinking about going to Innsbruck tomorrow around 1130 on a bus and coming back around 7. Round trip its like $16. Anyone wanna join?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543690593191,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543683896826,
+      "content": "Heyo Toby and I are thinking of going to munich after work on the 9th to see what this krampus thing is all about and then staying over and returning Monday evening sometime if anyone is interested in joining!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543643884984,
+      "content": "So yeah those guys ran down 1200m in 45 minutes haha...",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543643868742,
+      "content": "Some of us were talking about this last night- the kramerspitz goes from 700m to 1900m elevation.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543604936627,
+      "content": "Be there in 5",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543604919946,
+      "content": "So just passed Tobi, Eva, Parker Abby and smythe, they\u00e2\u0080\u0099re heading to front lobby to call taxi. I\u00e2\u0080\u0099m waiting with Spencer another few minutes and will call for a second can",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543604475070,
+      "content": "Middle 1061",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543604455485,
+      "content": "1066 but next door at Spencer\u00e2\u0080\u0099s now 1061",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543603980871,
+      "content": "What's your room number?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543603708127,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543603622328,
+      "content": "We can come whenever?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543603489088,
+      "content": "Cool. Spencer is dropping by in a minute. I know he doesn\u00e2\u0080\u0099t want to walk there, again \u00f0\u009f\u0098\u0089 I guess we\u00e2\u0080\u0099ll figure out the calling the cab part, and Spencer still has the cable guy there, so eta???",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543603462928,
+      "content": "I\u00e2\u0080\u0099m down",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543603436666,
+      "content": "Down",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543603359772,
+      "content": "Im down",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543603343779,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543603064190,
+      "content": "I'd be down",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Beau Blessing",
+      "timestamp_ms": 1543603028203,
+      "content": "Anyone for the Lodge tonight? Split a taxi?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543602861073,
+      "content": "Marilyn and I could be down for a hike, possibly down for kramerspitz though haha.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543601987820,
+      "content": "Marilyn and I spaced the housing paperwork but I messaged dannon and he said we can drop it in the box during the weekend too.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543600222382,
+      "content": "Yeah I did. Leo i think we might still try for the kramerspitze unless it snows a lot tonight with the slight rain we got.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543598883597,
+      "content": "Did everyone turn in their housing paperwork?",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00a2",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543593348707,
+      "content": "This is the ziegspitz",
+      "share": {
+        "link": "https://www.bergtour-online.de/bergtouren/bergwanderungen/mittel/hoher-ziegspitz/"
+      },
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543593034838,
+      "content": "I'll get my Opa's opinion too but I'd probably lean toward agreeing with that assessment. Of course the final decision is up to whoever wants to go ^o^",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543592864865,
+      "content": "There were a couple other hikes with peaks he recommended that are a bit shorter/nicer and might be better for right now. Would be on the stepberg (ziegspitze) or on the Wank.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543592808899,
+      "content": "He said that the kramerspitze is technically doable right now but that it's like 8-9 hours and that generally it's a much better hike for the summer than this time of year.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543592754284,
+      "content": "So I just talked to my dad about the kramerspitze/hikes we could do right now.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543518921032,
+      "content": "Same",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543518244674,
+      "content": "Don't think I'll make it. Servus is far and I am weak.",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543518212749,
+      "content": "Anyone planning to head down to meet Parker/hit the live music bar in the next 30? I'm questioning my own singular motivation due to fading buzz + lingering jetlag haha",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543511554013,
+      "content": "Actually 9. So I\u00e2\u0080\u0099m heading to the Christmas market around 7 if anyone would like to meet me there",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543510614483,
+      "content": "My roommate said probably around 8",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1543508598393,
+      "content": "I\u00e2\u0080\u0099d be down to go!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543505531078,
+      "content": "What time does the music start?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543505266238,
+      "content": "Possibly down",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Smythe Eddy",
+      "timestamp_ms": 1543505249536,
+      "content": "I'm down!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543504709055,
+      "content": "Down?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543500068907,
+      "content": "Oooh",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Parker Lehman",
+      "timestamp_ms": 1543497734809,
+      "content": "Yo there\u00e2\u0080\u0099s a bar called Servus Musicbar that\u00e2\u0080\u0099s playing live music tonight if y\u00e2\u0080\u0099all interested",
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u00ae",
+          "actor": "Leo Thom"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543495723765,
+      "content": "Leo named the group 2018 Imported Hausberg Squad.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543495497541,
+      "content": "Lmao jk. Seems like some peeps are heading to the christkindlmarkt in the next hour or so? Meet at the ID card place or front of the other base in the next 30 if you want to go",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543495291513,
+      "content": "Or start a gang \u00f0\u009f\u0098\u0088",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543495260495,
+      "content": "Let's be friends \u00f0\u009f\u0098\u0087",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543495248672,
+      "content": "Servus everyone",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Leo Thom",
+      "timestamp_ms": 1543495221408,
+      "content": "Leo created the group.",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "2018 Imported Hausberg Squad",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "inbox/2018importedhausbergsquad_cqci5u1avq",
+  "magic_words": [
+    
+  ]
+}

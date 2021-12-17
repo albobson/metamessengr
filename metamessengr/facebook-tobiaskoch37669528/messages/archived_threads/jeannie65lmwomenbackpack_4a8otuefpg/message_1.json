@@ -1,0 +1,56 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Jeannie Nieman"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598080594914,
+      "content": "Sorry backpack is no longer available",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jeannie Nieman",
+      "timestamp_ms": 1597979623974,
+      "content": "Jeannie is waiting for your response.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jeannie Nieman",
+      "timestamp_ms": 1597957378196,
+      "content": "It says 65 l do you know model? And M as in medium correct.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jeannie Nieman",
+      "timestamp_ms": 1597957375394,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jeannie Nieman",
+      "timestamp_ms": 1597957375181,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Jeannie \u00c2\u00b7 65L M women backpack",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/jeannie65lmwomenbackpack_4a8otuefpg",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/117353624_10157287045530069_4228131076314261344_n_943981059452552.jpg",
+    "creation_timestamp": 1597957373
+  }
+}

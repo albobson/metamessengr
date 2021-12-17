@@ -1,0 +1,59 @@
+{
+  "participants": [
+    {
+      "name": "Heather Kelly-Gray"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Heather Kelly-Gray",
+      "timestamp_ms": 1594481079612,
+      "content": "Thank you. I appreciate the reply!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1594480975961,
+      "content": "Hey! No worries I get it. I could go to $9,500. Not really interested in lowering it any more at the moment. Have a few interested buyers already. I can let you know if things change!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Heather Kelly-Gray",
+      "timestamp_ms": 1594343644764,
+      "content": "Heather is waiting for your response.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Heather Kelly-Gray",
+      "timestamp_ms": 1594321030133,
+      "content": "Hi Tobias, I love the Burro you have. I\u00e2\u0080\u0099ve been eying it since you first listed it. Curious if you have any flexibility on price? Don\u00e2\u0080\u0099t want to be that person just throwing lower offers, just working with a lower budget. Hope Maine is treating you well. I love it there. Some of the best star gazing I\u00e2\u0080\u0099ve experienced was in Maine.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Heather Kelly-Gray",
+      "timestamp_ms": 1594321028591,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Heather Kelly-Gray",
+      "timestamp_ms": 1594321028318,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Heather \u00c2\u00b7 1980 Burro 17ft Wide",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/heather1980burro17ftwide_agiamldsla",
+  "magic_words": [
+    
+  ]
+}

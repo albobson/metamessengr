@@ -1,0 +1,107 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Abigail Maiden Moffitt"
+    },
+    {
+      "name": "Hannah Spaulding"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1579101370392,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0091\u008d",
+          "actor": "Hannah Spaulding"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Hannah Spaulding",
+      "timestamp_ms": 1579096183342,
+      "content": "Can you just give me the key back at work tomorrow?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1579088636298,
+      "content": "Hey I drove your car back to edelweiss. But I was wondering if I could use it to take my skis to conrads",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Hannah Spaulding",
+      "timestamp_ms": 1573756174318,
+      "content": "Oh ok good!!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1573755432432,
+      "content": "Hey sorry my phones data isnt working for some reason. Ended up gdtting a ride from leah then taking the bus. Eveything is alrifht",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1573755428354,
+      "content": "Hey Hannah I actually got a ride from Leah but i could use a ride back from the hospital in probably 30 min",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1573746442341,
+      "content": "I would but I\u00e2\u0080\u0099m in the states \u00f0\u009f\u0098\u00ac did something happen?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Hannah Spaulding",
+      "timestamp_ms": 1573746413793,
+      "content": "Yeah when do you need to go",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1573745980470,
+      "content": "Could either of you do me a big favor and give me a ride to the hospital",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Abigail Maiden Moffitt",
+      "timestamp_ms": 1573745762751,
+      "content": "Abigail waved hello to the group.",
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1573745675151,
+      "content": "You created the group.",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Abigail and Hannah",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "inbox/abigailandhannah_xnoubrhhgw",
+  "magic_words": [
+    
+  ]
+}

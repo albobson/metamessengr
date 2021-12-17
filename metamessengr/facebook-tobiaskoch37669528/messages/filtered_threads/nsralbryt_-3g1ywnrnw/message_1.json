@@ -1,0 +1,28 @@
+{
+  "participants": [
+    {
+      "name": "\u00d9\u0086\u00d8\u00b3\u00d8\u00b1 \u00d8\u00a7\u00d9\u0084\u00d8\u00a8\u00d8\u00b1\u00d9\u008a\u00d8\u00a9"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "\u00d9\u0086\u00d8\u00b3\u00d8\u00b1 \u00d8\u00a7\u00d9\u0084\u00d8\u00a8\u00d8\u00b1\u00d9\u008a\u00d8\u00a9",
+      "timestamp_ms": 1637200254414,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "\u00e2\u0080\u008e\u00d9\u0086\u00d8\u00b3\u00d8\u00b1 \u00d8\u00a7\u00d9\u0084\u00d8\u00a8\u00d8\u00b1\u00d9\u008a\u00d8\u00a9\u00e2\u0080\u008e",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "filtered_threads/nsralbryt_-3g1ywnrnw",
+  "magic_words": [
+    
+  ]
+}

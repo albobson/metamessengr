@@ -1,0 +1,59 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Facebook user"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1597554766849,
+      "content": "Are you free to see it tomorrow?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1597554751446,
+      "content": "Yes",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1597533183186,
+      "content": " is waiting for your response.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1597510051264,
+      "content": "Hi Tobias, is this still available?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1597510049909,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1597510049676,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Elliot \u00c2\u00b7 65L M women backpack",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/elliot65lmwomenbackpack_ja7xluysha",
+  "magic_words": [
+    
+  ]
+}

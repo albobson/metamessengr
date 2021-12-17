@@ -1,0 +1,120 @@
+{
+  "participants": [
+    {
+      "name": "Savinay Chandrasekhar Nathan"
+    },
+    {
+      "name": "JD Atkinson"
+    },
+    {
+      "name": "John R\u00c4\u0083zvan"
+    },
+    {
+      "name": "Ben McRill"
+    },
+    {
+      "name": "Kyle Arnold"
+    },
+    {
+      "name": "Daniel Showalter"
+    },
+    {
+      "name": "Dave Kleckner"
+    },
+    {
+      "name": "Michael Tipton"
+    },
+    {
+      "name": "Todd Randall"
+    },
+    {
+      "name": "Jonathan Penn"
+    },
+    {
+      "name": "Geoffrey Brady"
+    },
+    {
+      "name": "Ben Bowling"
+    },
+    {
+      "name": "Andy Holly Meyer"
+    },
+    {
+      "name": "Facebook user"
+    },
+    {
+      "name": "Ram Rangarajan"
+    },
+    {
+      "name": "Facebook user"
+    },
+    {
+      "name": "Steve Baum"
+    },
+    {
+      "name": "Josh Ford"
+    },
+    {
+      "name": "James D'Amico"
+    },
+    {
+      "name": "Tom O'Connell"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1563827888108,
+      "content": "You left the group.",
+      "type": "Unsubscribe",
+      "users": [
+        {
+          "name": "Tobias Koch"
+        }
+      ],
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Savinay Chandrasekhar Nathan",
+      "timestamp_ms": 1563824259270,
+      "content": "Moderately likely! Especially if Todd and Ram are in! Bringing the SO.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Todd Randall",
+      "timestamp_ms": 1563819729360,
+      "content": "Hi Ben, I\u00e2\u0080\u0099ve been promising to visit since 2010 so if YOU planning it makes that happen, I\u00e2\u0080\u0099d have to say yes and bring a friend.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Kyle Arnold",
+      "timestamp_ms": 1563816322491,
+      "content": "I\u00e2\u0080\u0099m intrigued by it.  I\u00e2\u0080\u0099m not sure that I could commit to it.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Ram Rangarajan",
+      "timestamp_ms": 1563807270349,
+      "content": "I am in!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Ben Bowling",
+      "timestamp_ms": 1563787649304,
+      "content": "OK - crazy idea, but here we go...I've been kicking around the idea of hosting a group trek to India at some point in the future. It would require two weeks for travel to and from the US and within India. \nRound trip flights run around $1500 and in country expenses would also be around $1500 for budget accommodations and travel. Throw in another $500 for visas and misc costs and you're looking at somewhere around $3500. It would require a fair amount of planning, so we'd be looking at 2020-2021. \n\nI know that the time and expense would be difficult for many of you to swing, but I wanted to at least through out the idea. \nIF this is something you are potentially interested in, let me know and we'll continue discussions. \nOf course, I'd be open to people bringing along friends, spouses or older children (14+). You'd need to be in decent physical fitness to come (be able to run a 5k in 30 min). \nIf this is something that might interest you, send me a pm. I'm not looking for commitments now, just interest. Feel free to leave the group if this isn't something you are interested in. \nCheers!",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Savinay, JD, John and 17 others",
+  "is_still_participant": false,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/savinayjdjohnand17others_uciptxqhkw",
+  "magic_words": [
+    
+  ]
+}

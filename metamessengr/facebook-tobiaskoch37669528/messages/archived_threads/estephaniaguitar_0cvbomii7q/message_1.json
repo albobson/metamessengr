@@ -1,0 +1,49 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Estephan\u00c3\u00ada Natal\u00c3\u00adn\u00c3\u00ad"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1603930914698,
+      "content": "It is not designed as a left handed guitar but you can rearing the guitar so you it could be",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Estephan\u00c3\u00ada Natal\u00c3\u00adn\u00c3\u00ad",
+      "timestamp_ms": 1603929494702,
+      "content": "Good evening, can this be used with left handed people",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Estephan\u00c3\u00ada Natal\u00c3\u00adn\u00c3\u00ad",
+      "timestamp_ms": 1603929493411,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Estephan\u00c3\u00ada Natal\u00c3\u00adn\u00c3\u00ad",
+      "timestamp_ms": 1603929493186,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Estephan\u00c3\u00ada \u00c2\u00b7 guitar",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/estephaniaguitar_0cvbomii7q",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/122763901_10157438014235069_7409486727465562381_n_435243100795006.jpg",
+    "creation_timestamp": 1603929492
+  }
+}

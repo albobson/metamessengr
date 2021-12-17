@@ -1,0 +1,45 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Bo LaRue"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1593520116400,
+      "content": "Thanks!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Bo LaRue",
+      "timestamp_ms": 1593491506733,
+      "content": "Never seen, cute rig. Not interested in buying",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Bo LaRue",
+      "timestamp_ms": 1593491505366,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Bo LaRue",
+      "timestamp_ms": 1593491504691,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Bo \u00c2\u00b7 1980 Burro 17ft Wide",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/bo1980burro17ftwide_4f1ourwtrq",
+  "magic_words": [
+    
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "participants": [
+    {
+      "name": "Alex Winkler"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1543954400512,
+      "content": "You are now connected on Messenger",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Alex Winkler",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/alexwinkler_0pcsexxlng",
+  "magic_words": [
+    
+  ]
+}

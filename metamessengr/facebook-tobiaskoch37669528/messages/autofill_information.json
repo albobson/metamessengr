@@ -1,0 +1,35 @@
+{
+  "autofill_information_v2": {
+    "CITY": [
+      "Garmisch-Partenkirchen"
+    ],
+    "COUNTRY": [
+      "DE"
+    ],
+    "EMAIL": [
+      "robertobias.k@gmail.com",
+      "rtk0307@westminstercollege.edu"
+    ],
+    "PHONE": [
+      "+16266449999"
+    ],
+    "JOB_TITLE": [
+      "Public Health Associate"
+    ],
+    "COMPANY_NAME": [
+      "Center for Disease Control"
+    ],
+    "GENDER": [
+      "male"
+    ],
+    "FIRST_NAME": [
+      "Tobias"
+    ],
+    "LAST_NAME": [
+      "Koch"
+    ],
+    "FULL_NAME": [
+      "Tobias Koch"
+    ]
+  }
+}

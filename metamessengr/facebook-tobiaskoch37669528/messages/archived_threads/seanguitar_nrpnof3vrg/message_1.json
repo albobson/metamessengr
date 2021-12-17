@@ -1,0 +1,144 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Sean Bartlett"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604940980657,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604940974757,
+      "content": "Omw",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604940846669,
+      "content": "Parked next to the basketball court in a grey Toyota Tundra",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604939639463,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604939625369,
+      "content": "Will noon work. Just leaving work now",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604930034241,
+      "content": "Sounds great. I should be off of work around 10",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604930001825,
+      "content": "Hey I'm around all day. Same park anytime",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604929972575,
+      "content": "Sorry had already gone to bed. If you are available today please let me know when and where. Thanks",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604880632942,
+      "content": "Hey I am home now if your still interested! I live across the street from McIntyre park",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604855462400,
+      "content": "Let me know when and where, thanks",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604855412577,
+      "content": "Yeah I will be around in thrle evening",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604842281810,
+      "content": "Can I get it from you today?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1604842189256,
+      "content": "Yup!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604836506337,
+      "content": "Sean is waiting for your response.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604796712838,
+      "content": "Is this still available?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604796710814,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sean Bartlett",
+      "timestamp_ms": 1604796710186,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Sean \u00c2\u00b7 guitar",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/seanguitar_nrpnof3vrg",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/122763901_10157438014235069_7409486727465562381_n_1135437980187277.jpg",
+    "creation_timestamp": 1604796708
+  }
+}

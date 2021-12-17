@@ -1,0 +1,77 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Martin Kaiser"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596834825116,
+      "content": "If you were enterprising enough you could use the existing structure of the closet to build a shower.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596834767290,
+      "content": "I have a little pull out toilet in there. But no shower. It's all in the description and photos.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Martin Kaiser",
+      "timestamp_ms": 1596832332745,
+      "content": "I did some research. The Burro trailer has no toilet or shower. Is this true?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596830415909,
+      "content": "I will be doing a open house with a closed bid tomorrow if you are interested",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596830391220,
+      "content": "Yes it is it weighs about 1650 lbs",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Martin Kaiser",
+      "timestamp_ms": 1596829541845,
+      "content": "Hello, is this still available? What is its weight? Needs to be less than 5000pds",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Martin Kaiser",
+      "timestamp_ms": 1596829540012,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Martin Kaiser",
+      "timestamp_ms": 1596829539866,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Martin \u00c2\u00b7 1980 Burro 17ft Long Wide Version",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/martin1980burro17ftlongwideversion_mlxecvpjzq",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/106278191_10157178402340069_3987089004351466521_n_958375211241677.jpg",
+    "creation_timestamp": 1596829539
+  }
+}

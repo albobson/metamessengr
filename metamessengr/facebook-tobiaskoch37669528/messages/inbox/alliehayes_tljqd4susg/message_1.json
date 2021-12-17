@@ -1,0 +1,26 @@
+{
+  "participants": [
+    {
+      "name": "Allie Hayes"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Allie Hayes",
+      "timestamp_ms": 1530598876733,
+      "content": "You are now connected on Messenger",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Allie Hayes",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/alliehayes_tljqd4susg",
+  "magic_words": [
+    
+  ]
+}

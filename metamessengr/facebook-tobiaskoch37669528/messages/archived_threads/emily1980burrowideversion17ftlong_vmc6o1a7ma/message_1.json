@@ -1,0 +1,49 @@
+{
+  "participants": [
+    {
+      "name": "Emily Anderson"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596089639344,
+      "content": "Nope sorry",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Emily Anderson",
+      "timestamp_ms": 1596086725973,
+      "content": "Is this available? I'm really interested but am wondering if you would consider offers below asking price?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Emily Anderson",
+      "timestamp_ms": 1596086724351,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Emily Anderson",
+      "timestamp_ms": 1596086724133,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Emily \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/emily1980burrowideversion17ftlong_vmc6o1a7ma",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/106278191_10157178402340069_3987089004351466521_n_600957374146921.jpg",
+    "creation_timestamp": 1596086722
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "participants": [
+    {
+      "name": "Aishwarya Kurade"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Aishwarya Kurade",
+      "timestamp_ms": 1592092624408,
+      "content": "Okay the invite doesn't seem to be recognizing your name but there you go that's the group! Maybe send them a request",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aishwarya Kurade",
+      "timestamp_ms": 1592092571062,
+      "content": "Aishwarya sent a group.",
+      "share": {
+        "link": "https://www.facebook.com/groups/yalehousing/"
+      },
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aishwarya Kurade",
+      "timestamp_ms": 1592090878212,
+      "content": "okay, i can't seem to add you I think it's your privacy settings. maybe you could send a request?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1592090731756,
+      "content": "Yeah please add me!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aishwarya Kurade",
+      "timestamp_ms": 1592090665612,
+      "content": "yeah lmk if you wanna be added i'll have to friend you and invite you",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1592081608879,
+      "content": "You can now message and call each other and see info like Active Status and when you've read messages.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1592081608480,
+      "content": "Hi! Is that a Facebook group? Thanks for the advice",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aishwarya Kurade",
+      "timestamp_ms": 1592080778761,
+      "content": "your * camper",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Aishwarya Kurade",
+      "timestamp_ms": 1592080768474,
+      "content": "Hey! Try posting on yale sales and rentals and yale free and for sale groups for it lovely camper !",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Aishwarya Kurade",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/aishwaryakurade_pcpbamuoeg",
+  "magic_words": [
+    
+  ]
+}

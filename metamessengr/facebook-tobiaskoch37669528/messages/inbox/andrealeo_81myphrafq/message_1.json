@@ -1,0 +1,47 @@
+{
+  "participants": [
+    {
+      "name": "Andrea Leo"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Andrea Leo",
+      "timestamp_ms": 1638903591372,
+      "content": "Thanks for your response are you willing to ship with additional payment of $100 for the shipping fee and I\u00e2\u0080\u0099m going to make payment first via PayPal or Venmo . I want it to ship to my daughter Texas",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1638903569642,
+      "content": "You can now message and call each other and see info like Active Status and when you've read messages.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1638903569351,
+      "content": "yes",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Andrea Leo",
+      "timestamp_ms": 1638809588831,
+      "content": "Sony a7ii $800 is this still available for sale",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Andrea Leo",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/andrealeo_81myphrafq",
+  "magic_words": [
+    
+  ]
+}

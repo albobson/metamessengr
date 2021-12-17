@@ -1,0 +1,33 @@
+{
+  "participants": [
+    {
+      "name": "Allie Orndahl"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1611454031204,
+      "content": "Haha thanks!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Allie Orndahl",
+      "timestamp_ms": 1611453654395,
+      "content": "Congrats on the engagement Toby!!! Excited to have another married person in the group!!! \u00f0\u009f\u0098\u008a",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Allie Orndahl",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/allieorndahl_6rxioieljq",
+  "magic_words": [
+    
+  ]
+}

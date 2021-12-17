@@ -1,0 +1,56 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Alam Rose"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1639155762405,
+      "content": "No it doesnt",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Alam Rose",
+      "timestamp_ms": 1639091901954,
+      "content": "",
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Alam Rose",
+      "timestamp_ms": 1639091900268,
+      "content": "Does the grip fit the a7iii?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Alam Rose",
+      "timestamp_ms": 1639091898079,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Alam Rose",
+      "timestamp_ms": 1639091897906,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Alam \u00c2\u00b7 Sony a7ii",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "inbox/alamsonya7ii_cu_mqokqmw",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/262199921_876030946440463_6847853761553591657_n_613261133057313.jpg",
+    "creation_timestamp": 1639091895
+  }
+}

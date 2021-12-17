@@ -1,0 +1,49 @@
+{
+  "participants": [
+    {
+      "name": "Morgan Grobe"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1595386208742,
+      "content": "It's probably between 1600 to 1700. It was 1480 when I got it but I added a closet and some shelving",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Morgan Grobe",
+      "timestamp_ms": 1595385211149,
+      "content": "What's the weight on this?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Morgan Grobe",
+      "timestamp_ms": 1595385209632,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Morgan Grobe",
+      "timestamp_ms": 1595385209211,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Morgan \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/morgan1980burrowideversion17ftlong_qcoacg4msa",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/106278191_10157178402340069_3987089004351466521_n_507420170032789.jpg",
+    "creation_timestamp": 1595385208
+  }
+}

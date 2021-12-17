@@ -1,0 +1,56 @@
+{
+  "participants": [
+    {
+      "name": "Jodi Loomis"
+    },
+    {
+      "name": "Tobias Koch"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Jodi Loomis",
+      "timestamp_ms": 1594524210258,
+      "content": "Ok",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1594506138478,
+      "content": "Currently have a potential buyer but it's not final",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jodi Loomis",
+      "timestamp_ms": 1594506016605,
+      "content": "Is this still available?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jodi Loomis",
+      "timestamp_ms": 1594506015105,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Jodi Loomis",
+      "timestamp_ms": 1594506014498,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Jodi \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/jodi1980burrowideversion17ftlong_gadlndkc4a",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/106278191_10157178402340069_3987089004351466521_n_392234625069130.jpg",
+    "creation_timestamp": 1594506013
+  }
+}

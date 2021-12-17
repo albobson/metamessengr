@@ -1,0 +1,59 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Facebook user"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1595111454608,
+      "content": "No worries!",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1595111413440,
+      "content": "Nope sorry.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1595107588399,
+      "content": "Just talked my husband into 2k more if you'd consider $9,000?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1595107257121,
+      "content": "Will you take $7,000 cash?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1595107255417,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Facebook user",
+      "timestamp_ms": 1595107255101,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Kyle \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/kyle1980burrowideversion17ftlong_yolnods6ww",
+  "magic_words": [
+    
+  ]
+}

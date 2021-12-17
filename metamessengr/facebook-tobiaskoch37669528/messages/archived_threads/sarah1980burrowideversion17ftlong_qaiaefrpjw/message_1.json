@@ -1,0 +1,94 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Sarah Bethany"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596125180622,
+      "content": "Here is a link as an example of how you could adjust your tongue weight to fit your needs. https://youtu.be/RRo_yxwo-hA",
+      "share": {
+        "link": "https://www.youtube.com/watch?v=RRo_yxwo-hA"
+      },
+      "type": "Share",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596124969864,
+      "content": "Hmm okay. You may already know this so if I do I apologize but the tongue weight or hitch weight is variable depending on how you pack your trailer and where because it is how the weight is balanced on the wheel. There is a dry hitch weight which I dont know anymore because of remodels but it isn't much of a guarantee.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sarah Bethany",
+      "timestamp_ms": 1596034120782,
+      "content": "2000 but the hitch weight has to be 200 or less.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596034054829,
+      "content": "What is your towing capacity?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sarah Bethany",
+      "timestamp_ms": 1596033819389,
+      "content": "Ok, thank you.  I have to know the exact weight of the unit and hitch.  I have a very limited amount that I am able to tow.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1596030320613,
+      "content": "Don't know the exact weight but when I bought it it was 1480. After some remodeling it is probably close to 1600 or 1700",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sarah Bethany",
+      "timestamp_ms": 1596020168902,
+      "content": "Sarah is waiting for your response.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sarah Bethany",
+      "timestamp_ms": 1595979046670,
+      "content": "Do you know the hitch weight, and also do this have a toilet?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sarah Bethany",
+      "timestamp_ms": 1595979045035,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Sarah Bethany",
+      "timestamp_ms": 1595979044810,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Sarah \u00c2\u00b7 1980 Burro Wide Version 17ft Long",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/sarah1980burrowideversion17ftlong_qaiaefrpjw",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/106278191_10157178402340069_3987089004351466521_n_1584496651720184.jpg",
+    "creation_timestamp": 1595979043
+  }
+}

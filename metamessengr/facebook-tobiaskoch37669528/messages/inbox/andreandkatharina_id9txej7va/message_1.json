@@ -1,0 +1,150 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Andr\u00c3\u00a9 Godat"
+    },
+    {
+      "name": "Katharina Decke"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1578422497175,
+      "content": "Sad\u00f0\u009f\u0098\u00bf",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1578422434027,
+      "content": "Game just finished. Drenched in sweat and bike has a flat. Don't think I'm gonna make it.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564044948177,
+      "videos": [
+        {
+          "uri": "messages/inbox/andreandkatharina_id9txej7va/videos/video1564044947_682092882257867.mp4",
+          "creation_timestamp": 1564044945,
+          "thumbnail": {
+            "uri": "https://interncache-prn.fbcdn.net/v/t15.3394-10/65828900_2434427969928716_8757736726786520593_n.jpg?ccb=1-5&_nc_sid=bdf623&efg=eyJ1cmxnZW4iOiJwaHBfdXJsZ2VuX2NsaWVudC9pbW9nZW46RFlJTWVzc2FnZURhdGFBZGFwdGVyIn0%3D&_nc_ad=z-m&_nc_cid=0&_nc_ht=interncache-prn&oh=03_AVK4kEUkNuL6ec2PHVbMEjhuQtIkA6xE4CgaQRJnZ3imvQ&oe=61C0D26A"
+          }
+        }
+      ],
+      "reactions": [
+        {
+          "reaction": "\u00f0\u009f\u0098\u0086",
+          "actor": "Andr\u00c3\u00a9 Godat"
+        }
+      ],
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564044100194,
+      "content": "Jap",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564044074931,
+      "content": "do you guys have sunscreen? Josh still has mine from Wannig",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564043573576,
+      "content": "\u00f0\u009f\u00a7\u0090",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564043538182,
+      "content": "JK",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564043106972,
+      "content": "Sweet I'll be there at 10:52",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564041689270,
+      "content": "I'll be at the back gate at 1046 and 11 seconds\u00f0\u009f\u0098\u008e",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564040246833,
+      "content": "Yeaiii Andres appointment got cancelled, so he's in",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564039859677,
+      "sticker": {
+        "uri": "messages/stickers_used/851587_369239346556147_162929011_n_369239343222814.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564039731737,
+      "content": "Want to leave around 1045?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564039720149,
+      "content": "Andr\u00c3\u00a9 has to go to the court so he can't go",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Katharina Decke",
+      "timestamp_ms": 1564039698287,
+      "content": "I can leave whenever. And yes there's a spot\u00f0\u009f\u0098\u008a",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564038276023,
+      "content": "Hey what time so you guys want to leave for eibsee? Also do we have space for Spencer?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1564038275365,
+      "content": "You created the group.",
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Andr\u00c3\u00a9 and Katharina",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "inbox/andreandkatharina_id9txej7va",
+  "magic_words": [
+    
+  ]
+}

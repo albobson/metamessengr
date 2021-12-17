@@ -1,0 +1,128 @@
+{
+  "participants": [
+    {
+      "name": "Tobias Koch"
+    },
+    {
+      "name": "Mikayla Rogers"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1599077446467,
+      "content": "Should be around",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1599076172725,
+      "content": "No worries, I\u00e2\u0080\u0099m actually not free this week to come look at it. If the bag is still available on Saturday could I come check it out then? I\u00e2\u0080\u0099m planning a backpacking trip for weekend after so I\u00e2\u0080\u0099m definitely interested, just don\u00e2\u0080\u0099t have the time to swing by until this weekend",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598923065863,
+      "content": "Hey! Wow sorry just seeing this i would be available tomorrow evening",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598659264952,
+      "content": "Are you available tomorrow for me to come check it out?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598657572632,
+      "content": "More an issue of size and fit for her body type",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598657528786,
+      "content": "Yeah it's an osprey aura 65l.  The pack rubbed her hips wrong because it was too big for her.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598655395752,
+      "content": "Oh that\u00e2\u0080\u0099s not good but I might still be interested if you could send  another picture. Do you know what the name of it is too? I\u00e2\u0080\u0099d like to look up the style since sometimes the company will have details about the different pockets so you don\u00e2\u0080\u0099t have to take a million pics",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598655161800,
+      "content": "Okay perfect. There isn't any damage to the bag. They just gave my girlfriend blisters on her hips so she got another one.",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598655116670,
+      "content": "Oh yes I\u00e2\u0080\u0099m in Portland, Maine haha",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598655084081,
+      "content": "Wait are you located near Seattle? I changed the location because I moved to Maine. Not sure if it updated",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598654598379,
+      "content": "Are there any damages to the bag? I may be interested, could you please send more pictures or send the name of the osprey bag",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Tobias Koch",
+      "timestamp_ms": 1598653404924,
+      "sticker": {
+        "uri": "messages/stickers_used/39178562_1505197616293642_5411344281094848512_n_369239263222822.png"
+      },
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598649834465,
+      "content": "Hi! Is this still available?",
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598649832986,
+      "type": "Generic",
+      "is_unsent": false
+    },
+    {
+      "sender_name": "Mikayla Rogers",
+      "timestamp_ms": 1598649832824,
+      "type": "Generic",
+      "is_unsent": false
+    }
+  ],
+  "title": "Mikayla \u00c2\u00b7 65L M women backpack",
+  "is_still_participant": true,
+  "thread_type": "RegularGroup",
+  "thread_path": "archived_threads/mikayla65lmwomenbackpack_uw6xjxid2a",
+  "magic_words": [
+    
+  ],
+  "image": {
+    "uri": "messages/photos/117594655_10157287048375069_6156172371503005790_n_326625095061612.jpg",
+    "creation_timestamp": 1598649831
+  }
+}
