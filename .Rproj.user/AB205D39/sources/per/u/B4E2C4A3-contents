@@ -1,0 +1,10 @@
+####      Alexander Robertson, Toby Koch       ####
+#### Script to analyze Facebook Messenger Data ####
+####                 12/16/21                  ####
+###################################################
+
+install.packages("devtools")
+install.packages("roxygen2")
+
+library(devtools)
+library(roxygen2)

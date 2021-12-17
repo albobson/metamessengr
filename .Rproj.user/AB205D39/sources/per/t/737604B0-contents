@@ -1,0 +1,85 @@
+## Script to analyze messenger data
+
+## Load packages
+library(purrr)
+library(jsonlite)
+library(dplyr)
+library(tidytext)
+library(tidyr)
+library(textdata)
+library(stringr)
+library(ggplot2)
+library(scales)
+library(chron)
+
+
+## Set wd
+setwd("C:/Users/Meowy/Documents/R/Projects/Messenger Analysis/devins club")
+
+### Writing a function for just selection
+selection <- function(inp=NULL) {
+  inp = lapply(Sys.glob("message_*.json"), fromJSON)
+  l = as.numeric(length(map(inp,2)))
+  s = seq(from = 1, to = l)
+  f = NULL
+  for (i in s) {
+    t = select(map(inp,2)[[i]], timestamp_ms, sender_name, content)
+    if (i == 1){
+      f=t
+    } else {
+      f = rbind(f, t)
+    }
+  }
+  inp = f
+}
+n = selection()
+
+## Clean dataframe
+n = as.data.frame(n)
+n = flatten(n)
+n$timestamp_ms = n$timestamp_ms/1000
+n$timestamp_ms <- as.POSIXct(n$timestamp_ms, origin="1970-01-01", tz="America/Los_Angeles")
+n$date = as.Date(as.character(n$timestamp_ms))
+n$time = strftime(n$timestamp_ms, format="%H:%M:%S")
+n$time = chron(times=n$time)
+n$time = as.numeric(n$time)
+n$hour = n$time*24
+n$sender = n$sender_name
+n$length=nchar(n$content)
+n$length[which(n$length>640)] = NA
+
+
+## Basic bar plot for number of messages sent by date
+p <- ggplot(n, aes(x=date))
+p + geom_bar()
+
+## Bar plot with coloring for who sent what
+q <- ggplot(n, aes(x=date, fill = sender))
+q + geom_bar()
+
+## Looking at the percent sent per day by person
+q <- ggplot(n, aes(x=date, fill = sender))
+q + geom_bar(position = "fill")
+
+## Boxplot of the length of messages
+g = ggplot(n, aes(x=sender, y=length, color=sender))
+g + geom_boxplot() +
+  theme(axis.text.x = element_text(angle = 90))
+
+## Looking at the percent of words sent per day by person
+q <- ggplot(n, aes(x=date, y =length, fill = sender))
+q + geom_bar(stat = "identity")
+## And using fill
+q <- ggplot(n, aes(x=date, y =length, fill = sender))
+q + geom_bar(stat = "identity", position="fill")
+
+## Scatter of messages sent by time
+h <- ggplot(n, aes(x=date, y=hour, color=sender))
+h + geom_point(size=1) +
+  scale_y_continuous(limits = c(0, 24), breaks = (0:12)*2)
+
+## Scatter of messages sent by time including length
+h <- ggplot(n, aes(x=date, y=hour, color=sender, size = length))
+h + geom_point() +
+  scale_y_continuous(limits = c(0, 24), breaks = (0:12)*2) +
+  scale_size_continuous(range=c(0.5,4))
