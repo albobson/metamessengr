@@ -18,6 +18,7 @@ setwd("C:/Users/meowy/OneDrive/Documents/R/Projects/Messenger Analysis/Olivia")
 ## Writing a function for just selection
 selection <- function(inp=NULL) {
 
+
   ## This looks for all of the files that start with "message_" and are .json
   ## format. It then reads each file in using fromJSON() and assigns to inp
   inp = lapply(Sys.glob("message_*.json"), fromJSON)
@@ -48,17 +49,39 @@ selection <- function(inp=NULL) {
 
 n = selection()
 
+## Convert n to a data frame
 n = as.data.frame(n)
+
+## Flattenn the nested dataframe
 n = flatten(n)
+
+## Turn the timestamp into the format that R likes (not miliseconds)
 n$timestamp_ms = n$timestamp_ms/1000
+
+## Have it convert the timestamp to POSIXct
 n$timestamp_ms <- as.POSIXct(n$timestamp_ms, origin="1970-01-01", tz="America/Los_Angeles")
+
+## Make a new row, "date" and have it read in the POSIXct as date
 n$date = as.Date(as.character(n$timestamp_ms))
+
+## Read in the timestamp time as an actual time (this separates the date and time)
 n$time = strftime(n$timestamp_ms, format="%H:%M:%S")
+
+## Further time cleaning
 n$time = chron(times=n$time)
 n$time = as.numeric(n$time)
+
+## New column with sending hour
 n$hour = n$time*24
+
+## New column with the sender's name
 n$sender = n$sender_name
+
+## new column with the length of each message sent
 n$length=nchar(n$content)
+
+## Messenger only allows messages of 640 characters or less. Setting anything
+## above that to NA as anything else is bogus
 n$length[which(n$length>640)] = NA
 
 
@@ -134,13 +157,14 @@ tidy_text2 %>%
 #### Creating a new DF with author names attached. Noting the frequency
 
 
-tidy_text=mutate(tidy_text, author = "Alexander") %>%
+tidy_test=mutate(tidy_text, author = "Alexander") %>%
   mutate(word = str_extract(word, "[a-z']+")) %>%
   count(word) %>%
-  mutate(proportion = n / sum(n)) %>%
+  mutate("proportion" = n / sum(n)) %>%
   select(-n) %>%
-  spread(proportion) %>%
+  pivot_wider(proportion) %>%
   gather(proportion)
+
 tidy_text2=mutate(tidy_text2, author = "Olivia")
 
 frequency <- bind_cols(mutate(tidy_text, author = "Alexander"),
@@ -150,7 +174,7 @@ frequency <- bind_cols(mutate(tidy_text, author = "Alexander"),
   group_by(author) %>%
   mutate(proportion = n / sum(n)) %>%
   select(-n) %>%
-  spread(author, proportion) %>%
+  pivot_wider(author, proportion) %>%
   gather(author, proportion, `Alexander`:`Olivia`)
 frequency=na.omit(frequency)
 
