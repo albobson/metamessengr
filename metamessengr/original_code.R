@@ -100,14 +100,16 @@ tidy_text <- dat %>%
          content_c = removeWords(content_c, stop_words$word),        #remove stop words
          content_c = removeWords(content_c, stop_slang),          #custom words you dont want
          content_c = str_squish(content_c),                        #remove whitespace
+         content_cc = content_c #create copy of column for the unnest token
       ) %>%
   filter(!is.na(content_c),
          content_c != "",
          content_c != "connected messenger") #removes default message from facebook when you become fb friends with someone
 
+#may want to filter by dictionary words as well TBD
 
 tidy_words = unnest_tokens(tidy_text,
-                           input = content_c,
+                           input = content_cc,
                            output = "words",
                            token = "words")
 
