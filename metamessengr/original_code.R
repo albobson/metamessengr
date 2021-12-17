@@ -21,7 +21,7 @@ selection <- function(inp=NULL) {
 
   ## This looks for all of the files that start with "message_" and are .json
   ## format. It then reads each file in using fromJSON() and assigns to inp
-  inp = lapply(Sys.glob("message_*.json"), fromJSON)
+  inp = lapply(list.files(recursive = T, pattern = "\\.json$"), fromJSON)
 
   ## This then takes the inp and finds how many files it read and assigns it l
   l = as.numeric(length(map(inp,2)))
@@ -35,12 +35,16 @@ selection <- function(inp=NULL) {
   ## content of the message. It then makes f = to that selection if it's the
   ## first file's data, or it row binds the data onto it if it's anything else.
   for (i in s) {
+    if("content" %in% names(inp[[i]][[2]])){
+
     t = select(map(inp,2)[[i]], timestamp_ms, sender_name, content)
     if (i == 1){
       f=t
     } else {
       f = rbind(f, t)
     }
+    }
+    print(i)
   }
 
   ## Then f, the smaller dataset, is bound to inp and is the output
