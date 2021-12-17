@@ -12,7 +12,7 @@ using<-function(...) {
 }
 
 using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
-      "ggplot2","scales","chron","lexicon","ggraph","igraph")
+      "ggplot2","scales","chron","lexicon","ggraph","igraph", "tm")
 
 ## Set wd
 setwd("messages/inbox")
@@ -69,9 +69,10 @@ selection <- function(inp=NULL) {
 n = selection()
 
 #*******************************************************
-#Data Cleaning
+#Data Cleaning ####
 #*******************************************************
-#*
+
+#TIME CLEANING
 dat = n %>%
   mutate(timestamp_ms = timestamp_ms/1000,## Turn the timestamp into the format that R likes (not miliseconds)
          timestamp_ms = as.POSIXct(timestamp_ms,
@@ -89,24 +90,56 @@ dat = n %>%
         convo = paste(sender_name,"-",sent_to)) %>%
   rename(sender = sender_name)
 
+stop_slang = c("yeah", "yo", "hey", "haha", "a lot","https")
 
-dat2 <- dat %>%
-  mutate(content_c = str_replace_all(content, "[^a-zA-Z0-9]", " "),
-         content_c = str_replace_all(content_c, " +", " ")
-      )
+#CLEANING THE CONTENT
 
-dat_s = dat2 %>%
-  group_by(sender,sent) %>%
+tidy_text <- dat %>%
+  mutate(content_c = str_replace_all(content, "[^a-zA-Z0-9]", " "), #remove special characters
+         content_c = str_to_lower(content_c),                       #make lowercase
+         content_c = removeWords(content_c, stop_words$word),        #remove stop words
+         content_c = removeWords(content_c, stop_slang),          #custom words you dont want
+         content_c = str_squish(content_c),                        #remove whitespace
+      ) %>%
+  filter(!is.na(content_c),
+         content_c != "",
+         content_c != "connected messenger") #removes default message from facebook when you become fb friends with someone
+
+
+tidy_words = unnest_tokens(tidy_text,
+                           input = content_c,
+                           output = "words",
+                           token = "words")
+
+#SUMMARY ####
+
+dat_s = tidy_text %>%
+  group_by(sender,sent_to) %>%
   summarise(count = n(),
             length = sum(length, na.rm = T))
 
-dat_s2 = dat2 %>%
+dat_s2 = tidy_text %>%
   group_by(sent_to) %>%
   summarise(count = n(),
             length = sum(length, na.rm = T))
 
 
+#top words by user
+tw_s = tidy_words %>%
+  group_by(sender, words) %>%
+  summarise(n = n()) %>%
+  ungroup()
 
+t = tw_s %>%
+  slice_max(order_by = n,
+            n = 25)
+
+#top 25 words
+ggplot(t, aes(x = n, y = words, fill = sender, color = sender)) +
+  geom_bar(stat = "identity")
+
+
+#TOBY CODE GOOD UNTIL HERE
 
 ############# Sentiment Analysis ############
 
@@ -124,23 +157,18 @@ dat_s2 = dat2 %>%
 
 
 ## Removing some custom stopwords
-custom_stop_words <- bind_rows(tibble(word = c("na"),
-                                      lexicon = c("custom")),
-                               stop_words)
+
 
 ### All words in one column then removing stop words and only keeping words in the dictionary
-tidy_text <- alex_t %>%
-  unnest_tokens(word, text) %>%
-  anti_join(custom_stop_words) %>%
-  semi_join(grady_augmented)
+
 
 
 ### Graphing the words
-tidy_text %>%
-  count(word, sort = TRUE) %>%
-  filter(n > 900) %>%
-  mutate(word = reorder(word, n)) %>%
-  ggplot(aes(word, n)) +
+tidy_words %>%
+  count(content_c, sort = TRUE) %>%
+  filter(> 900) %>%
+  mutate(content_c = reorder(content_c, n)) %>%
+  ggplot(aes(content_c, n)) +
   geom_col() +
   xlab(NULL) +
   coord_flip()
