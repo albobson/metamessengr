@@ -7,4 +7,4 @@
 library(devtools)
 library(roxygen2)
 
-devtools::create("metamessengr")
+# devtools::create("metamessengr")
