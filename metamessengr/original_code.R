@@ -17,6 +17,11 @@ using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
 ## Set wd
 setwd("messages/inbox")
 
+#extract name of messenger
+
+fns = list.files(recursive = T,
+                 pattern = "\\.json$")
+fns2 = str_extract(fns, "[^_]+")
 
 ## Writing a function for just selection
 
@@ -72,40 +77,42 @@ dat = n %>%
          time = strftime(timestamp_ms, format="%H:%M:%S"),
          time = chron(times=time), ## Further time cleaning
          time = as.numeric(time),
-         hour = time *24) %>% ## New column with sending hour
-rename(sender = sender_name)
+         hour = time *24, ## New column with sending hour
+         length = ifelse(nchar(content)>640, #nchar >640
+                         NA, #true
+                         nchar(content)) #FALSE ## Messenger only allows messages of 640 characters or less. Setting anything
+                                         ## above that to NA as anything else is bogus
+        ) %>%
+  rename(sender = sender_name)
 
-## New column with the sender's name
-n$sender = n$sender_name
+dat2 <- dat %>%
+  mutate(content_c = str_replace_all(content, "[^a-zA-Z0-9]", " "),
+         content_c = str_replace_all(content_c, " +", " ")
+      )
 
-## new column with the length of each message sent
-n$length=nchar(n$content)
+dat_s = dat2 %>%
+  group_by(sender) %>%
+  summarise(count = n(),
+            length = sum(length, na.rm = T))
 
-## Messenger only allows messages of 640 characters or less. Setting anything
-## above that to NA as anything else is bogus
-n$length[which(n$length>640)] = NA
+p = ggplot()
 
 
 
 ############# Sentiment Analysis ############
 
-## Getting just one person's messages
-alex = as.data.frame(n$content[which(n$sender == "Alexander James Robertson")])
-### Renaming the row name
-    ### Do I need this?
-  names(alex)[names(alex) == 'n$content[which(n$sender == "Alexander James Robertson")]'] <- "content"
+# ## Getting just one person's messages
+# alex = as.data.frame(n$content[which(n$sender == "Alexander James Robertson")])
+# ### Renaming the row name
+#     ### Do I need this?
+#   names(alex)[names(alex) == 'n$content[which(n$sender == "Alexander James Robertson")]'] <- "content"
+#
+#     ### Needed to change to a tibble
+#   text_df <- as.vector(as.character(alex))
+#   alex_t=tibble(text=text_df)
 
-    ### Needed to change to a tibble
-  text_df <- as.vector(as.character(alex))
-  alex_t=tibble(text=text_df)
 
 
-### Adding whole dictionary
-data("grady_augmented")
-
-### Turning it into a tibble that works
-grady_augmented=as_tibble(grady_augmented)
-grady_augmented=rename(grady_augmented, word=value)
 
 ## Removing some custom stopwords
 custom_stop_words <- bind_rows(tibble(word = c("na"),
