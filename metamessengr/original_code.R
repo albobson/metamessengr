@@ -19,19 +19,21 @@ setwd("messages/inbox")
 
 #extract name of messenger
 
-fns = list.files(recursive = T,
-                 pattern = "\\.json$")
-fns2 = str_extract(fns, "[^_]+")
+
 
 ## Writing a function for just selection
 
 selection <- function(inp=NULL) {
 
+#creates list of file names
+  fns = list.files(recursive = T,
+                   pattern = "\\.json$")
+#extracts groups from file name
+  fns2 = str_extract(fns, "[^_]+")
 
   ## This looks for all of the files that start with "message_" and are .json
   ## format. It then reads each file in using fromJSON() and assigns to inp
-  inp = lapply(list.files(recursive = T,
-                          pattern = "\\.json$"),
+  inp = lapply(fns,
                fromJSON)
 
   ## This then takes the inp and finds how many files it read and assigns it l
@@ -48,7 +50,9 @@ selection <- function(inp=NULL) {
   for (i in s) {
     if("content" %in% names(inp[[i]][[2]])){
 
-    t = select(map(inp,2)[[i]], timestamp_ms, sender_name, content)
+    t = map(inp,2)[[i]] %>%
+            select(timestamp_ms, sender_name, content) %>%
+            mutate(sent_to = fns2[[i]])
     if (i == 1){
       f=t
     } else {
@@ -80,10 +84,11 @@ dat = n %>%
          hour = time *24, ## New column with sending hour
          length = ifelse(nchar(content)>640, #nchar >640
                          NA, #true
-                         nchar(content)) #FALSE ## Messenger only allows messages of 640 characters or less. Setting anything
+                         nchar(content)), #FALSE ## Messenger only allows messages of 640 characters or less. Setting anything
                                          ## above that to NA as anything else is bogus
-        ) %>%
+        convo = paste(sender_name,"-",sent_to)) %>%
   rename(sender = sender_name)
+
 
 dat2 <- dat %>%
   mutate(content_c = str_replace_all(content, "[^a-zA-Z0-9]", " "),
@@ -91,11 +96,15 @@ dat2 <- dat %>%
       )
 
 dat_s = dat2 %>%
-  group_by(sender) %>%
+  group_by(sender,sent) %>%
   summarise(count = n(),
             length = sum(length, na.rm = T))
 
-p = ggplot()
+dat_s2 = dat2 %>%
+  group_by(sent_to) %>%
+  summarise(count = n(),
+            length = sum(length, na.rm = T))
+
 
 
 
