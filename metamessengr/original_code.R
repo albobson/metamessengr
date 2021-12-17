@@ -44,7 +44,6 @@ selection <- function(inp=NULL) {
       f = rbind(f, t)
     }
     }
-    print(i)
   }
 
   ## Then f, the smaller dataset, is bound to inp and is the output
@@ -53,10 +52,12 @@ selection <- function(inp=NULL) {
 
 n = selection()
 
+
+###### I will turn this into a "clean" function
 ## Convert n to a data frame
 n = as.data.frame(n)
 
-## Flattenn the nested dataframe
+## Flatten the nested dataframe
 n = flatten(n)
 
 ## Turn the timestamp into the format that R likes (not miliseconds)
