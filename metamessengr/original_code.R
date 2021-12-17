@@ -3,7 +3,7 @@ using<-function(...) {
   libs<-unlist(list(...))
   req<-unlist(lapply(libs,require,character.only=TRUE))
   need<-libs[req==FALSE]
-  if(length(need)>0){ 
+  if(length(need)>0){
     install.packages(need)
     lapply(need,require,character.only=TRUE)
   }
@@ -15,12 +15,24 @@ using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
 ## Set wd
 setwd("C:/Users/meowy/OneDrive/Documents/R/Projects/Messenger Analysis/Olivia")
 
-### Writing a function for just selection
+## Writing a function for just selection
 selection <- function(inp=NULL) {
+
+  ## This looks for all of the files that start with "message_" and are .json
+  ## format. It then reads each file in using fromJSON() and assigns to inp
   inp = lapply(Sys.glob("message_*.json"), fromJSON)
+
+  ## This then takes the inp and finds how many files it read and assigns it l
   l = as.numeric(length(map(inp,2)))
+
+  ## s is called as a sequence from 1 to the previous length (l)
   s = seq(from = 1, to = l)
+
+  ## Setting f to NULL
   f = NULL
+  ## For i in the number of files loaded, select the timestamp, sender_name, and
+  ## content of the message. It then makes f = to that selection if it's the
+  ## first file's data, or it row binds the data onto it if it's anything else.
   for (i in s) {
     t = select(map(inp,2)[[i]], timestamp_ms, sender_name, content)
     if (i == 1){
@@ -29,6 +41,8 @@ selection <- function(inp=NULL) {
       f = rbind(f, t)
     }
   }
+
+  ## Then f, the smaller dataset, is bound to inp and is the output
   inp = f
 }
 
@@ -56,11 +70,11 @@ alex = as.data.frame(n$content[which(n$sender == "Alexander James Robertson")])
 ### Renaming the row name
     ### Do I need this?
   names(alex)[names(alex) == 'n$content[which(n$sender == "Alexander James Robertson")]'] <- "content"
-  
+
     ### Needed to change to a tibble
   text_df <- as.vector(as.character(alex))
   alex_t=tibble(text=text_df)
-  
+
 
 ### Adding whole dictionary
 data("grady_augmented")
@@ -70,8 +84,8 @@ grady_augmented=as_tibble(grady_augmented)
 grady_augmented=rename(grady_augmented, word=value)
 
 ## Removing some custom stopwords
-custom_stop_words <- bind_rows(tibble(word = c("na"), 
-                                      lexicon = c("custom")), 
+custom_stop_words <- bind_rows(tibble(word = c("na"),
+                                      lexicon = c("custom")),
                                stop_words)
 
 ### All words in one column then removing stop words and only keeping words in the dictionary
@@ -123,20 +137,20 @@ tidy_text2 %>%
 tidy_text=mutate(tidy_text, author = "Alexander") %>%
   mutate(word = str_extract(word, "[a-z']+")) %>%
   count(word) %>%
-  mutate(proportion = n / sum(n)) %>% 
-  select(-n) %>% 
-  spread(proportion) %>% 
+  mutate(proportion = n / sum(n)) %>%
+  select(-n) %>%
+  spread(proportion) %>%
   gather(proportion)
 tidy_text2=mutate(tidy_text2, author = "Olivia")
 
 frequency <- bind_cols(mutate(tidy_text, author = "Alexander"),
-                       mutate(tidy_text2, author = "Olivia"), by=word) %>% 
+                       mutate(tidy_text2, author = "Olivia"), by=word) %>%
   mutate(word = str_extract(word, "[a-z']+")) %>%
   count(author, word) %>%
   group_by(author) %>%
-  mutate(proportion = n / sum(n)) %>% 
-  select(-n) %>% 
-  spread(author, proportion) %>% 
+  mutate(proportion = n / sum(n)) %>%
+  select(-n) %>%
+  spread(author, proportion) %>%
   gather(author, proportion, `Alexander`:`Olivia`)
 frequency=na.omit(frequency)
 
@@ -172,7 +186,7 @@ bigrams_filtered <- bigrams_separated %>%
   filter(word2 %in% grady_augmented$word)
 
 ## New bigram counts:
-bigram_counts <- bigrams_filtered %>% 
+bigram_counts <- bigrams_filtered %>%
   count(word1, word2, sort = TRUE)
 
 bigram_counts
