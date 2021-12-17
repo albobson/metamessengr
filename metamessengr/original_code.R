@@ -88,6 +88,8 @@ n$length=nchar(n$content)
 ## above that to NA as anything else is bogus
 n$length[which(n$length>640)] = NA
 
+n$sender[which(n$sender=="")] = NA
+
 
 
 ############# Sentiment Analysis ############
@@ -125,7 +127,7 @@ tidy_text <- alex_t %>%
 ### Graphing the words
 tidy_text %>%
   count(word, sort = TRUE) %>%
-  filter(n > 900) %>%
+  filter(n > 1500) %>%
   mutate(word = reorder(word, n)) %>%
   ggplot(aes(word, n)) +
   geom_col() +
@@ -221,7 +223,7 @@ bigram_counts
 
 ## Filtering to only bigrams with more than 15 uses
 bigram_graph <- bigram_counts %>%
-  filter(n > 15) %>%
+  filter(n > 50) %>%
   graph_from_data_frame()
 
 bigram_graph
