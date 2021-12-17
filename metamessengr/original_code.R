@@ -15,15 +15,19 @@ using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
       "ggplot2","scales","chron","lexicon","ggraph","igraph")
 
 ## Set wd
-setwd("C:/Users/meowy/OneDrive/Documents/R/Projects/Messenger Analysis/Olivia")
+setwd("messages/inbox")
+
 
 ## Writing a function for just selection
+
 selection <- function(inp=NULL) {
 
 
   ## This looks for all of the files that start with "message_" and are .json
   ## format. It then reads each file in using fromJSON() and assigns to inp
-  inp = lapply(list.files(recursive = T, pattern = "\\.json$"), fromJSON)
+  inp = lapply(list.files(recursive = T,
+                          pattern = "\\.json$"),
+               fromJSON)
 
   ## This then takes the inp and finds how many files it read and assigns it l
   l = as.numeric(length(map(inp,2)))
@@ -55,30 +59,21 @@ selection <- function(inp=NULL) {
 
 n = selection()
 
-## Convert n to a data frame
-n = as.data.frame(n)
-
-## Flattenn the nested dataframe
-n = flatten(n)
-
-## Turn the timestamp into the format that R likes (not miliseconds)
-n$timestamp_ms = n$timestamp_ms/1000
-
-## Have it convert the timestamp to POSIXct
-n$timestamp_ms <- as.POSIXct(n$timestamp_ms, origin="1970-01-01", tz="America/Los_Angeles")
-
-## Make a new row, "date" and have it read in the POSIXct as date
-n$date = as.Date(as.character(n$timestamp_ms))
-
-## Read in the timestamp time as an actual time (this separates the date and time)
-n$time = strftime(n$timestamp_ms, format="%H:%M:%S")
-
-## Further time cleaning
-n$time = chron(times=n$time)
-n$time = as.numeric(n$time)
-
-## New column with sending hour
-n$hour = n$time*24
+#*******************************************************
+#Data Cleaning
+#*******************************************************
+#*
+dat = n %>%
+  mutate(timestamp_ms = timestamp_ms/1000,## Turn the timestamp into the format that R likes (not miliseconds)
+         timestamp_ms = as.POSIXct(timestamp_ms,
+                                   origin="1970-01-01",
+                                   tz="America/Los_Angeles"), ## Have it convert the timestamp to POSIXct
+         date = as.Date(timestamp_ms),
+         time = strftime(timestamp_ms, format="%H:%M:%S"),
+         time = chron(times=time), ## Further time cleaning
+         time = as.numeric(time),
+         hour = time *24) %>% ## New column with sending hour
+rename(sender = sender_name)
 
 ## New column with the sender's name
 n$sender = n$sender_name
