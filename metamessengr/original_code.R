@@ -13,83 +13,179 @@ using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
       "ggplot2","scales","chron","lexicon","ggraph","igraph")
 
 ## Set wd
-setwd("C:/Users/meowy/OneDrive/Documents/R/Projects/Messenger Analysis/Olivia")
+# setwd("C:/Users/meowy/OneDrive/Documents/School stuff/Yale/BIS 620/fb_mess_final_proj/metamessengr")
+# setwd("C:/Users/meowy/OneDrive/Documents/R/Projects/Messenger Analysis/fbm_data_subset")
 
-## Writing a function for just selection
-selection <- function(inp=NULL) {
+#### Commenting out the code below because it has useful documentation for us
+#### I created a function that was stripped down (see below) and added it to the
+#### /R folder.
 
+# ## Writing a function for just selection
+# selection <- function(...) {
+#
+#
+#   ## This looks for all of the files that start with "message_" and are .json
+#   ## format. It then reads each file in using fromJSON() and assigns to inp
+#   inp = lapply(list.files(recursive = T, pattern = "\\.json$"), fromJSON)
+#
+#   ## This then takes the inp and finds how many files it read and assigns it l
+#   l = as.numeric(length(map(inp,2)))
+#
+#   ## s is called as a sequence from 1 to the previous length (l)
+#   s = seq(from = 1, to = l)
+#
+#   ## Setting f to NULL
+#   f = NULL
+#   ## For i in the number of files loaded, select the timestamp, sender_name, and
+#   ## content of the message. It then makes f = to that selection if it's the
+#   ## first file's data, or it row binds the data onto it if it's anything else.
+#   for (i in s) {
+#     if("content" %in% names(inp[[i]][[2]])){
+#
+#     t = select(map(inp,2)[[i]], timestamp_ms, sender_name, content)
+#     if (i == 1){
+#       f=t
+#     } else {
+#       f = rbind(f, t)
+#     }
+#     }
+#   }
+#
+#   ## Then f, the smaller dataset, is bound to inp and is the output
+#   inp = f
+# }
 
-  ## This looks for all of the files that start with "message_" and are .json
-  ## format. It then reads each file in using fromJSON() and assigns to inp
-  inp = lapply(list.files(recursive = T, pattern = "\\.json$"), fromJSON)
-
-  ## This then takes the inp and finds how many files it read and assigns it l
+selection <- function(infile=NULL) {
+  if(is.null(infile)){
+    infile = getwd()
+  }
+  fns = list.files(path = infile,
+                   recursive = T,
+                   pattern = "\\.json$")
+  fns2 = str_extract(fns, "[^_]+")
+  inp = lapply(fns,
+               fromJSON)
   l = as.numeric(length(map(inp,2)))
-
-  ## s is called as a sequence from 1 to the previous length (l)
   s = seq(from = 1, to = l)
-
-  ## Setting f to NULL
   f = NULL
-  ## For i in the number of files loaded, select the timestamp, sender_name, and
-  ## content of the message. It then makes f = to that selection if it's the
-  ## first file's data, or it row binds the data onto it if it's anything else.
   for (i in s) {
     if("content" %in% names(inp[[i]][[2]])){
 
-    t = select(map(inp,2)[[i]], timestamp_ms, sender_name, content)
-    if (i == 1){
-      f=t
-    } else {
-      f = rbind(f, t)
-    }
+      t = map(inp,2)[[i]] %>%
+        select(timestamp_ms, sender_name, content) %>%
+        mutate(sent_to = fns2[[i]])
+      if (i == 1){
+        f=t
+      } else {
+        f = rbind(f, t)
+      }
     }
   }
-
-  ## Then f, the smaller dataset, is bound to inp and is the output
-  inp = f
+  inp = as.data.frame(f)
 }
 
 n = selection()
 
 
-###### I will turn this into a "clean" function
-## Convert n to a data frame
-n = as.data.frame(n)
+# ###### I will turn this into a "clean" function
+# ## Convert n to a data frame
+# n = as.data.frame(n)
+#
+# ## Flatten the nested dataframe
+# n = flatten(n)
+#
+# ## Turn the timestamp into the format that R likes (not miliseconds)
+# n$timestamp_ms = n$timestamp_ms/1000
+#
+# ## Have it convert the timestamp to POSIXct
+# n$timestamp_ms <- as.POSIXct(n$timestamp_ms, origin="1970-01-01", tz="America/Los_Angeles")
+#
+# ## Make a new row, "date" and have it read in the POSIXct as date
+# n$date = as.Date(as.character(n$timestamp_ms))
+#
+# ## Read in the timestamp time as an actual time (this separates the date and time)
+# n$time = strftime(n$timestamp_ms, format="%H:%M:%S")
+#
+# ## Further time cleaning
+# n$time = chron(times=n$time)
+# n$time = as.numeric(n$time)
+#
+# ## New column with sending hour
+# n$hour = n$time*24
+#
+# ## New column with the sender's name
+# n$sender = n$sender_name
+#
+# ## new column with the length of each message sent
+# n$length=nchar(n$content)
+#
+# ## Messenger only allows messages of 640 characters or less. Setting anything
+# ## above that to NA as anything else is bogus
+# n$length[which(n$length>640)] = NA
+#
+# n$sender[which(n$sender=="")] = NA
 
-## Flatten the nested dataframe
-n = flatten(n)
+#*******************************************************
+#Data Cleaning ####
+#*******************************************************
 
-## Turn the timestamp into the format that R likes (not miliseconds)
-n$timestamp_ms = n$timestamp_ms/1000
+#TIME CLEANING
+dat = n %>%
+  mutate(timestamp_ms = timestamp_ms/1000,## Turn the timestamp into the format that R likes (not miliseconds)
+         timestamp_ms = as.POSIXct(timestamp_ms,
+                                   origin="1970-01-01",
+                                   tz="America/Los_Angeles"), ## Have it convert the timestamp to POSIXct
+         date = as.Date(timestamp_ms),
+         time = strftime(timestamp_ms, format="%H:%M:%S"),
+         time = chron(times=time), ## Further time cleaning
+         time = as.numeric(time),
+         hour = time *24, ## New column with sending hour
+         length = ifelse(nchar(content)>640, #nchar >640
+                         NA, #true
+                         nchar(content)), #FALSE ## Messenger only allows messages of 640 characters or less. Setting anything
+         ## above that to NA as anything else is bogus
+         convo = paste(sender_name,"-",sent_to)) %>%
+  rename(sender = sender_name)
 
-## Have it convert the timestamp to POSIXct
-n$timestamp_ms <- as.POSIXct(n$timestamp_ms, origin="1970-01-01", tz="America/Los_Angeles")
+clean_mess <- function(data) {
+  ret = data %>%
+    mutate(timestamp_ms = timestamp_ms/1000,
+           timestamp_ms = as.POSIXct(timestamp_ms,
+                                     origin="1970-01-01",
+                                     tz="America/Los_Angeles"),
+           date = as.Date(timestamp_ms),
+           time = strftime(timestamp_ms, format="%H:%M:%S"),
+           time = chron(times=time),
+           time = as.numeric(time),
+           hour = time *24,
+           length = ifelse(nchar(content)>640,
+                           NA,
+                           nchar(content)),
+           convo = paste(sender_name,"-",sent_to)) %>%
+    rename(sender = sender_name)
+  ret
+}
 
-## Make a new row, "date" and have it read in the POSIXct as date
-n$date = as.Date(as.character(n$timestamp_ms))
+stop_slang = c("yeah", "yo", "hey", "haha", "a lot","https")
 
-## Read in the timestamp time as an actual time (this separates the date and time)
-n$time = strftime(n$timestamp_ms, format="%H:%M:%S")
+#CLEANING THE CONTENT
 
-## Further time cleaning
-n$time = chron(times=n$time)
-n$time = as.numeric(n$time)
+tidy_text <- cln %>%
+  mutate(content_c = str_replace_all(content, "[^a-zA-Z0-9]", " "), #remove special characters
+         content_c = str_to_lower(content_c),                       #make lowercase
+         content_c = removeWords(content_c, stop_words$word),        #remove stop words
+         content_c = removeWords(content_c, stop_slang),          #custom words you dont want
+         content_c = str_squish(content_c),                        #remove whitespace
+  ) %>%
+  filter(!is.na(content_c),
+         content_c != "",
+         content_c != "connected messenger") #removes default message from facebook when you become fb friends with someone
 
-## New column with sending hour
-n$hour = n$time*24
 
-## New column with the sender's name
-n$sender = n$sender_name
-
-## new column with the length of each message sent
-n$length=nchar(n$content)
-
-## Messenger only allows messages of 640 characters or less. Setting anything
-## above that to NA as anything else is bogus
-n$length[which(n$length>640)] = NA
-
-n$sender[which(n$sender=="")] = NA
+tidy_words = unnest_tokens(tidy_text,
+                           input = content_c,
+                           output = "words",
+                           token = "words")
 
 
 
