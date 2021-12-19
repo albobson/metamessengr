@@ -10,6 +10,8 @@
 #' @return A data frame with time stamp fixed to be usable in R, and date and
 #' time columns.
 #'
+#' @import dplyr chron lubridate
+#'
 #' @export
 clean_mess_time <- function(data) {
   ret = data %>%

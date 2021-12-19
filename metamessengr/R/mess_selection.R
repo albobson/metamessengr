@@ -4,18 +4,20 @@
 #' Facebook Messenger folders unzipped. The output is a data frame of
 #' every message's content, sender and time stamp.
 #'
-#' @param infile The file path where the messenger data is stored. If NULL, will
-#' use working directory.
+#' @param file_loc A character vector with the file path where the messenger
+#' data is stored. If NULL, will use working directory.
 #'
 #' @return A data frame of each message's sender, content and time-stamp.
 #'
+#' @import dplyr purrr stringr
+#'
 #' @export
-mess_selection <- function(infile) {
-  if(is.null(infile)){
-    infile = getwd()
+mess_selection <- function(file_loc) {
+  if(is.null(file_loc)){
+    file_loc = getwd()
   }
   wd <- getwd()
-  setwd(infile)
+  setwd(file_loc)
   fns = list.files(recursive = T,
                    pattern = "\\.json$")
   fns2 = str_extract(fns, "[^_]+")
@@ -38,6 +40,6 @@ mess_selection <- function(infile) {
     }
   }
   setwd(wd)
-  inp = as.data.frame(f) %>%
+  as.data.frame(f) %>%
     rename(sender = sender_name)
 }

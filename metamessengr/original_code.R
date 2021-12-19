@@ -10,7 +10,7 @@ using<-function(...) {
 }
 
 using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
-      "ggplot2","scales","chron","lexicon","ggraph","igraph")
+      "ggplot2","scales","chron","lexicon","ggraph","igraph","tm")
 
 ## Set wd
 # setwd("C:/Users/meowy/OneDrive/Documents/School stuff/Yale/BIS 620/fb_mess_final_proj/metamessengr")

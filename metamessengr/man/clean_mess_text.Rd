@@ -18,10 +18,13 @@ The cleaned version of the text is stored in the original content vector. The
 original message content is also retained, but stored in the
 vector: "content_unclean".}
 \usage{
-clean_mess_text(data)
+clean_mess_text(data, custom_clean = NULL)
 }
 \arguments{
 \item{data}{The original messenger data that was selected using selection()}
+
+\item{custom_clean}{An optional character vector which contains personal
+stop words. For example, if you'd like to remove "http", it could be added.}
 }
 \value{
 A data frame with cleaned up text data.

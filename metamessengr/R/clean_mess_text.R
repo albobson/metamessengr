@@ -15,12 +15,16 @@
 #' vector: "content_unclean".
 #'
 #' @param data The original messenger data that was selected using selection()
+#' @param custom_clean An optional character vector which contains personal
+#' stop words. For example, if you'd like to remove "http", it could be added.
 #'
 #' @return A data frame with cleaned up text data.
 #'
+#' @import dplyr tm tidytext stringr
+#'
 #' @export
-clean_mess_text <- function(data){
-  tidy_text <- data %>%
+clean_mess_text <- function(data, custom_clean=NULL) {
+  data = data %>%
     mutate(length = ifelse(nchar(content)>640, NA, nchar(content)),
            content_unclean = content,
            content = str_replace_all(content, "[^a-zA-Z0-9]", " "),
@@ -32,4 +36,12 @@ clean_mess_text <- function(data){
     filter(!is.na(content),
            content != "",
            content != "connected messenger")
+
+  if(!is.null(custom_clean)) {
+    data %>%
+      mutate(
+      content = removeWords(content, custom_clean)
+      )
+  }
+data
 }

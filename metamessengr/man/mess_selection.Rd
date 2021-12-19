@@ -8,11 +8,11 @@ This function selects raw Facebook Messenger data. All that's needed are your
 Facebook Messenger folders unzipped. The output is a data frame of
 every message's content, sender and time stamp.}
 \usage{
-mess_selection(infile)
+mess_selection(file_loc)
 }
 \arguments{
-\item{infile}{The file path where the messenger data is stored. If NULL, will
-use working directory.}
+\item{file_loc}{A character vector with the file path where the messenger
+data is stored. If NULL, will use working directory.}
 }
 \value{
 A data frame of each message's sender, content and time-stamp.
