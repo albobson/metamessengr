@@ -1,6 +1,6 @@
 #' @title Select FB Messenger Data
 #'
-#' This function selects raw Facebook Messenger data. All that's needed are your
+#' @description This function selects raw Facebook Messenger data. All that's needed are your
 #' Facebook Messenger folders unzipped. The output is a data frame of
 #' every message's content, sender and time stamp.
 #'
@@ -17,6 +17,7 @@
 #'
 #' @export
 mess_selection <- function(file_loc) {
+  timestamp_ms <- sender_name <- content <- NULL
   if(base::is.null(file_loc)){
     file_loc = getwd()
   }

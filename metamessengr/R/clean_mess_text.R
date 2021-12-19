@@ -1,6 +1,6 @@
 #' @title Clean the messenger data text content
 #'
-#' This function cleans the content of the text that was sent for each message.
+#' @description This function cleans the content of the text that was sent for each message.
 #' Specifically, it removes special characters, turns all words to lowercase,
 #' removes stopwords (words such as the, and, etc.), and removes white space.
 #'
@@ -28,7 +28,8 @@
 #'
 #' @export
 clean_mess_text <- function(data, custom_clean=NULL) {
-  stop_words <- data(stop_words)
+  content <- sender <- sent_to <- NULL
+  stop_words <- data("stop_words", envir = environment())
   data <-  data %>%
     dplyr::mutate(length = base::ifelse(base::nchar(content)>640, NA,
                                         base::nchar(content)),

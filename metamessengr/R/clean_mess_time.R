@@ -1,6 +1,6 @@
 #' @title Clean selected Facebook Messenger data
 #'
-#' This function cleans up the selected Facebook Messenger data after using the
+#' @description This function cleans up the selected Facebook Messenger data after using the
 #' selection() function.
 #'
 #' This will convert the time-stamp to a usable format.
@@ -18,6 +18,7 @@
 #'
 #' @export
 clean_mess_time <- function(data, timezone="America/Los_Angeles") {
+  timestamp_ms <- time <- NULL
   data %>%
     dplyr::mutate(timestamp_ms = timestamp_ms/1000,
            timestamp_ms = base::as.POSIXct(timestamp_ms,

@@ -2,25 +2,21 @@
 % Please edit documentation in R/clean_mess_time.R
 \name{clean_mess_time}
 \alias{clean_mess_time}
-\title{Clean selected Facebook Messenger data
-
-This function cleans up the selected Facebook Messenger data after using the
-selection() function.
-
-This will convert the time-stamp to a usable format.}
+\title{Clean selected Facebook Messenger data}
 \usage{
-clean_mess_time(data)
+clean_mess_time(data, timezone = "America/Los_Angeles")
 }
 \arguments{
 \item{data}{The original messenger data that was selected using selection()}
+
+\item{timezone}{A character vector with the timezone of the user. Default
+is Pacific Time.}
 }
 \value{
 A data frame with time stamp fixed to be usable in R, and date and
 time columns.
 }
 \description{
-Clean selected Facebook Messenger data
-
 This function cleans up the selected Facebook Messenger data after using the
 selection() function.
 

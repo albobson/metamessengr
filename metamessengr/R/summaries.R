@@ -11,6 +11,7 @@
 #'
 #' @export
 sender_sum <- function(data) {
+  sender <- sent_to <- NULL
   data %>%
     dplyr::group_by(sender,sent_to) %>%
     dplyr::summarise(count = dplyr::n(),
@@ -29,6 +30,7 @@ sender_sum <- function(data) {
 #'
 #' @export
 group_sum <- function(data) {
+  sent_to <- NULL
   data %>%
     dplyr::group_by(sent_to) %>%
     dplyr::summarise(count = dplyr::n(),
@@ -49,7 +51,8 @@ group_sum <- function(data) {
 #'
 #' @export
 top_words <- function(data) {
-  grady_augmented=dplyr::as_tibble(data(grady_augmented))
+  value <- content <- sender <- words <- used <- NULL
+  grady_augmented=dplyr::as_tibble(data("grady_augmented", envir = environment()))
   grady_augmented=dplyr::rename(grady_augmented, words=value)
   data = data %>%
     tidytext::unnest_tokens(input = content,

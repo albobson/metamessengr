@@ -2,11 +2,7 @@
 % Please edit documentation in R/mess_selection.R
 \name{mess_selection}
 \alias{mess_selection}
-\title{Select FB Messenger Data
-
-This function selects raw Facebook Messenger data. All that's needed are your
-Facebook Messenger folders unzipped. The output is a data frame of
-every message's content, sender and time stamp.}
+\title{Select FB Messenger Data}
 \usage{
 mess_selection(file_loc)
 }
@@ -18,8 +14,6 @@ data is stored. If NULL, will use working directory.}
 A data frame of each message's sender, content and time-stamp.
 }
 \description{
-Select FB Messenger Data
-
 This function selects raw Facebook Messenger data. All that's needed are your
 Facebook Messenger folders unzipped. The output is a data frame of
 every message's content, sender and time stamp.
