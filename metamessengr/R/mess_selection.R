@@ -19,7 +19,7 @@
 mess_selection <- function(file_loc) {
   timestamp_ms <- sender_name <- content <- NULL
   if(base::is.null(file_loc)){
-    file_loc = getwd()
+    file_loc = base::getwd()
   }
   wd <- base::getwd()
   base::setwd(file_loc)
@@ -48,3 +48,5 @@ mess_selection <- function(file_loc) {
   base::as.data.frame(f) %>%
     dplyr::rename(sender = sender_name)
 }
+
+

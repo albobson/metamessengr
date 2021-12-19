@@ -19,9 +19,9 @@
 #' @param custom_clean An optional character vector which contains personal
 #' stop words. For example, if you'd like to remove "http", it could be added.
 #'
-#' @return A data frame with cleaned up text data.
+#' @return A tibble with cleaned up text data.
 #'
-#' @importFrom dplyr mutate filter
+#' @importFrom dplyr mutate filter as_tibble
 #' @importFrom tm removeWords
 #' @importFrom stringr str_replace_all str_to_lower str_squish
 #' @importFrom magrittr %>%
@@ -29,7 +29,7 @@
 #' @export
 clean_mess_text <- function(data, custom_clean=NULL) {
   content <- sender <- sent_to <- NULL
-  stop_words <- data("stop_words", envir = environment())
+  stop_words <- metamessengr::stop_words
   data <-  data %>%
     dplyr::mutate(length = base::ifelse(base::nchar(content)>640, NA,
                                         base::nchar(content)),
@@ -49,5 +49,5 @@ clean_mess_text <- function(data, custom_clean=NULL) {
       content = tm::removeWords(content, custom_clean)
       )
   }
-data
+dplyr::as_tibble(data)
 }

@@ -9,10 +9,10 @@
 #' @param timezone A character vector with the timezone of the user. Default
 #' is Pacific Time.
 #'
-#' @return A data frame with time stamp fixed to be usable in R, and date and
+#' @return A tibble with time stamp fixed to be usable in R, and date and
 #' time columns.
 #'
-#' @importFrom dplyr mutate
+#' @importFrom dplyr mutate as_tibble
 #' @importFrom chron chron
 #' @importFrom magrittr %>%
 #'
@@ -28,5 +28,6 @@ clean_mess_time <- function(data, timezone="America/Los_Angeles") {
            time = base::strftime(timestamp_ms, format="%H:%M:%S"),
            time = chron::chron(times=time),
            time = base::as.numeric(time),
-           hour = time *24)
+           hour = time *24) %>%
+    dplyr::as_tibble()
 }

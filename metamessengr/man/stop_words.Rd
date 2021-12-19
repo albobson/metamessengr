@@ -3,11 +3,10 @@
 \docType{data}
 \name{stop_words}
 \alias{stop_words}
-\title{A lexicon of English stop-words}
+\title{Stop Words}
 \format{
 A data frame with 1149 rows and 2 variables:
-word - An English word
-lexicon - The source of the stop word. Either "onix", "SMART", or "snowball"
+word - An English word lexicon - The source of the stop word. Either "onix", "SMART", or "snowball".
 }
 \source{
 Taken from the tidytext package
@@ -16,6 +15,6 @@ Taken from the tidytext package
 data(stop_words)
 }
 \description{
-A lexicon of English stop-words
+Stop Words
 }
 \keyword{datasets}

@@ -13,7 +13,7 @@ clean_mess_text(data, custom_clean = NULL)
 stop words. For example, if you'd like to remove "http", it could be added.}
 }
 \value{
-A data frame with cleaned up text data.
+A tibble with cleaned up text data.
 }
 \description{
 This function cleans the content of the text that was sent for each message.

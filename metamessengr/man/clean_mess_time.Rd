@@ -13,7 +13,7 @@ clean_mess_time(data, timezone = "America/Los_Angeles")
 is Pacific Time.}
 }
 \value{
-A data frame with time stamp fixed to be usable in R, and date and
+A tibble with time stamp fixed to be usable in R, and date and
 time columns.
 }
 \description{

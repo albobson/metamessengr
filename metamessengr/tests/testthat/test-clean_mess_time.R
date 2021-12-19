@@ -1,3 +1,3 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
-})
+# test_that("clean_mess_time exports a dataframe", {
+#   expect_condition(class(clean_mess_time()) == "data.frame")
+# })
