@@ -14,7 +14,7 @@ using("purrr","jsonlite","dplyr","tidytext","tidyr","textdata","stringr",
 
 ## Set wd
 # setwd("C:/Users/meowy/OneDrive/Documents/School stuff/Yale/BIS 620/fb_mess_final_proj/metamessengr")
-# setwd("C:/Users/meowy/OneDrive/Documents/R/Projects/Messenger Analysis/fbm_data_subset")
+# setwd("C:/Users/meowy/OneDrive/Desktop/fbm_data_subset")
 
 #### Commenting out the code below because it has useful documentation for us
 #### I created a function that was stripped down (see below) and added it to the

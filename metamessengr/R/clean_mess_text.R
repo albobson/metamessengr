@@ -15,32 +15,37 @@
 #' vector: "content_unclean".
 #'
 #' @param data The original messenger data that was selected using selection()
+#'
 #' @param custom_clean An optional character vector which contains personal
 #' stop words. For example, if you'd like to remove "http", it could be added.
 #'
 #' @return A data frame with cleaned up text data.
 #'
-#' @import dplyr tm tidytext stringr
+#' @importFrom dplyr mutate filter
+#' @importFrom tm removeWords
+#' @importFrom stringr str_replace_all str_to_lower str_squish
+#' @importFrom magrittr %>%
 #'
 #' @export
 clean_mess_text <- function(data, custom_clean=NULL) {
-  data = data %>%
-    mutate(length = ifelse(nchar(content)>640, NA, nchar(content)),
+  stop_words <- data(stop_words)
+  data <-  data %>%
+    dplyr::mutate(length = base::ifelse(base::nchar(content)>640, NA,
+                                        base::nchar(content)),
            content_unclean = content,
-           content = str_replace_all(content, "[^a-zA-Z0-9]", " "),
-           content = str_to_lower(content),
-           content = removeWords(content, stop_words$word),
-           content = str_squish(content),
-           convo = paste(sender,"-",sent_to)
+           content = stringr::str_replace_all(content, "[^a-zA-Z0-9]", " "),
+           content = stringr::str_to_lower(content),
+           content = tm::removeWords(content, stop_words$word),
+           content = stringr::str_squish(content),
+           convo = base::paste(sender,"-",sent_to)
     ) %>%
-    filter(!is.na(content),
+    dplyr::filter(!base::is.na(content),
            content != "",
            content != "connected messenger")
-
-  if(!is.null(custom_clean)) {
+  if(!base::is.null(custom_clean)) {
     data %>%
-      mutate(
-      content = removeWords(content, custom_clean)
+      dplyr::mutate(
+      content = tm::removeWords(content, custom_clean)
       )
   }
 data

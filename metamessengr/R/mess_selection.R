@@ -9,37 +9,41 @@
 #'
 #' @return A data frame of each message's sender, content and time-stamp.
 #'
-#' @import dplyr purrr stringr
+#' @importFrom dplyr select mutate rename
+#' @importFrom jsonlite fromJSON
+#' @importFrom purrr map
+#' @importFrom stringr str_extract
+#' @importFrom magrittr %>%
 #'
 #' @export
 mess_selection <- function(file_loc) {
-  if(is.null(file_loc)){
+  if(base::is.null(file_loc)){
     file_loc = getwd()
   }
-  wd <- getwd()
-  setwd(file_loc)
-  fns = list.files(recursive = T,
+  wd <- base::getwd()
+  base::setwd(file_loc)
+  fns = base::list.files(recursive = T,
                    pattern = "\\.json$")
-  fns2 = str_extract(fns, "[^_]+")
-  inp = lapply(fns,
-               fromJSON)
-  l = as.numeric(length(map(inp,2)))
-  s = seq(from = 1, to = l)
+  fns2 = stringr::str_extract(fns, "[^_]+")
+  inp = base::lapply(fns,
+               jsonlite::fromJSON)
+  l = base::as.numeric(length(purrr::map(inp,2)))
+  s = base::seq(from = 1, to = l)
   f = NULL
   for (i in s) {
-    if("content" %in% names(inp[[i]][[2]])){
+    if("content" %in% base::names(inp[[i]][[2]])){
 
-      t = map(inp,2)[[i]] %>%
-        select(timestamp_ms, sender_name, content) %>%
-        mutate(sent_to = sub("/message", "", fns2[[i]]))
+      t = purrr::map(inp,2)[[i]] %>%
+        dplyr::select(timestamp_ms, sender_name, content) %>%
+        dplyr::mutate(sent_to = base::sub("/message", "", fns2[[i]]))
       if (i == 1){
         f=t
       } else {
-        f = rbind(f, t)
+        f = base::rbind(f, t)
       }
     }
   }
-  setwd(wd)
-  as.data.frame(f) %>%
-    rename(sender = sender_name)
+  base::setwd(wd)
+  base::as.data.frame(f) %>%
+    dplyr::rename(sender = sender_name)
 }

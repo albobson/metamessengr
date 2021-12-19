@@ -10,19 +10,20 @@
 #' @return A data frame with time stamp fixed to be usable in R, and date and
 #' time columns.
 #'
-#' @import dplyr chron lubridate
+#' @importFrom dplyr mutate
+#' @importFrom chron chron
+#' @importFrom magrittr %>%
 #'
 #' @export
 clean_mess_time <- function(data) {
-  ret = data %>%
-    mutate(timestamp_ms = timestamp_ms/1000,
-           timestamp_ms = as.POSIXct(timestamp_ms,
+  data %>%
+    dplyr::mutate(timestamp_ms = timestamp_ms/1000,
+           timestamp_ms = base::as.POSIXct(timestamp_ms,
                                      origin="1970-01-01",
                                      tz="America/Los_Angeles"),
-           date = as.Date(timestamp_ms),
-           time = strftime(timestamp_ms, format="%H:%M:%S"),
-           time = chron(times=time),
-           time = as.numeric(time),
+           date = base::as.Date(timestamp_ms),
+           time = base::strftime(timestamp_ms, format="%H:%M:%S"),
+           time = chron::chron(times=time),
+           time = base::as.numeric(time),
            hour = time *24)
-  ret
 }

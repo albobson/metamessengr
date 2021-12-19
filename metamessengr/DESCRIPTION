@@ -12,17 +12,20 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports:
-  dplyr,
-  purrr,
-  jsonlite,
-  tidytext,
-  tidyr,
-  textdata,
-  stringr,
-  ggplot2,
-  scales,
-  chron,
-  lexicon,
-  ggraph,
-  igraph,
-  tm
+    dplyr,
+    purrr,
+    jsonlite,
+    tidytext,
+    tidyr,
+    textdata,
+    stringr,
+    ggplot2,
+    scales,
+    chron,
+    lexicon,
+    ggraph,
+    igraph,
+    tm,
+    magrittr
+Depends: 
+    R (>= 2.10)
