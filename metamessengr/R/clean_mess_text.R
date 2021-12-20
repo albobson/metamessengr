@@ -36,7 +36,7 @@ clean_mess_text <- function(data, custom_clean=NULL) {
            content_unclean = content,
            content = stringr::str_replace_all(content, "[^a-zA-Z0-9]", " "),
            content = stringr::str_to_lower(content),
-           content = tm::removeWords(content, stop_words$word),
+           content = tm::removeWords(content, tidytext::stop_words$word),
            content = stringr::str_squish(content),
            convo = base::paste(sender,"-",sent_to)
     ) %>%
