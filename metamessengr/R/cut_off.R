@@ -20,8 +20,9 @@
 #'
 #' @export
 mess_cut_off <-  function(data, time = "2020-03-01") {
+  co <- base::as.Date(time, origin = "1970-01-01")
   data %>%
-    dplyr::mutate(event = base::ifelse(date < base::as.Date(time, origin = "1970-01-01"),
+    dplyr::mutate(event = base::ifelse(date < co,
                           "pre", #if before cutoff time
                           "post")) #if before cutoff time
 }

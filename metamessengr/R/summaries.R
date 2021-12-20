@@ -27,7 +27,8 @@ sender_sum <- function(data) {
 #' **Note - Must be performed before sentiment is added to the dataset**
 #'
 #' @return A tibble summarizing the total number of messages and the total
-#' number of characters sent in a specific group chat in the dataset.
+#' number of characters sent in a specific group chat in the dataset, ordered
+#' by the total number of messages.
 #'
 #' @importFrom dplyr group_by summarize n
 #' @importFrom magrittr %>%
@@ -38,7 +39,8 @@ group_sum <- function(data) {
   data %>%
     dplyr::group_by(sent_to) %>%
     dplyr::summarise(count = dplyr::n(),
-              length = base::sum(length, na.rm = T))
+              length = base::sum(length, na.rm = T))%>%
+    dplyr::arrange(dplyr::desc(count))
 }
 
 
