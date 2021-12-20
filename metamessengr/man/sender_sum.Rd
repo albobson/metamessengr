@@ -7,7 +7,8 @@
 sender_sum(data)
 }
 \arguments{
-\item{data}{A cleaned data frame of messenger data}
+\item{data}{A cleaned data frame of messenger data.
+\strong{Note - Must be performed before sentiment is added to the dataset}}
 }
 \value{
 A tibble summarizing the total number of messages and the total

@@ -45,7 +45,7 @@ t_mess <-  function(data){
 #'
 #' @importFrom dplyr filter select
 #' @importFrom magrittr %>%
-#' @importFrom ggplot2 ggplot aes geom_col facet_wrap geom_density
+#' @importFrom ggplot2 ggplot aes geom_col facet_wrap geom_density vars
 #'
 #' @export
 plot_mess <- function(data) {
@@ -55,13 +55,13 @@ plot_mess <- function(data) {
     ggplot2::ggplot(data,
                ggplot2::aes(x= timestamp_ms, y = value, fill = event, color = event )) +
     ggplot2::geom_col(show.legend = F) +
-    ggplot2::facet_wrap(vars(sender))
+    ggplot2::facet_wrap(ggplot2::vars(sender))
 
   sentiment_hist =
     ggplot2::ggplot(data,
                     ggplot2::aes(value, fill= event, color = event)) +
     ggplot2::geom_density(position = "dodge", na.rm = T, alpha = .5) +
-    ggplot2::facet_wrap(vars(sender))
+    ggplot2::facet_wrap(ggplot2::vars(sender))
 
 }
 

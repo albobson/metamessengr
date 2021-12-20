@@ -7,7 +7,8 @@
 top_words(data)
 }
 \arguments{
-\item{data}{A cleaned data frame of messenger data}
+\item{data}{A cleaned data frame of messenger data
+\strong{Note - Must be performed before sentiment is added to the dataset}}
 }
 \value{
 A tibble of the number of dictionary words used by each person and

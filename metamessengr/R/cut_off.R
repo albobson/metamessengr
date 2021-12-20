@@ -7,8 +7,9 @@
 #' @param data The original messenger data that was selected using selection()
 #' and cleaned using clean_mess_time() or clean_mess_all().
 #'
-#' @param time A character vector with the selected date (for
-#' example: "2000-12-31)
+#' @param time A character vector with the selected date. It is defaulted as the
+#' date most people consider to be the start of the COVID-19 Pandemic in the
+#' United States.
 #'
 #'
 #' @return A tibble in long format with messages described as "pre" or "post"
@@ -18,7 +19,7 @@
 #' @importFrom magrittr %>%
 #'
 #' @export
-mess_cut_off <-  function(data, time) {
+mess_cut_off <-  function(data, time = "2020-03-01") {
   data %>%
     dplyr::mutate(event = base::ifelse(date < base::as.Date(time, origin = "1970-01-01"),
                           "pre", #if before cutoff time

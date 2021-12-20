@@ -1,6 +1,7 @@
 #' @title Sender Summary
 #'
-#' @param data A cleaned data frame of messenger data
+#' @param data A cleaned data frame of messenger data.
+#' **Note - Must be performed before sentiment is added to the dataset**
 #'
 #' @return A tibble summarizing the total number of messages and the total
 #' number of characters sent by each person, to each specific chat
@@ -23,6 +24,7 @@ sender_sum <- function(data) {
 #' @title Group Chat Message Summary
 #'
 #' @param data A cleaned data frame of messenger data
+#' **Note - Must be performed before sentiment is added to the dataset**
 #'
 #' @return A tibble summarizing the total number of messages and the total
 #' number of characters sent in a specific group chat in the dataset.
@@ -44,6 +46,7 @@ group_sum <- function(data) {
 #' @title Top Words By User
 #'
 #' @param data A cleaned data frame of messenger data
+#' **Note - Must be performed before sentiment is added to the dataset**
 #'
 #' @return A tibble of the number of dictionary words used by each person and
 #' the total number of times used.

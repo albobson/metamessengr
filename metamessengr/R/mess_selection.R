@@ -44,9 +44,9 @@ mess_selection <- function(file_loc) {
       }
     }
   }
-  base::setwd(wd)
   base::as.data.frame(f) %>%
     dplyr::rename(sender = sender_name)
+  base::setwd(wd)
 }
 
 

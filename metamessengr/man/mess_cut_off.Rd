@@ -4,14 +4,15 @@
 \alias{mess_cut_off}
 \title{Describe messages as "pre" or "post" an event}
 \usage{
-mess_cut_off(data, time)
+mess_cut_off(data, time = "2020-03-01")
 }
 \arguments{
 \item{data}{The original messenger data that was selected using selection()
 and cleaned using clean_mess_time() or clean_mess_all().}
 
-\item{time}{A character vector with the selected date (for
-example: "2000-12-31)}
+\item{time}{A character vector with the selected date. It is defaulted as the
+date most people consider to be the start of the COVID-19 Pandemic in the
+United States.}
 }
 \value{
 A tibble in long format with messages described as "pre" or "post"
