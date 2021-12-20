@@ -2,7 +2,7 @@
 % Please edit documentation in R/clean_mess_time.R
 \name{clean_mess_time}
 \alias{clean_mess_time}
-\title{Clean selected Facebook Messenger data}
+\title{Clean Selected Facebook Messenger Data's Time}
 \usage{
 clean_mess_time(data, timezone = "America/Los_Angeles")
 }
@@ -17,8 +17,7 @@ A tibble with time stamp fixed to be usable in R, and date and
 time columns.
 }
 \description{
-This function cleans up the selected Facebook Messenger data after using the
-selection() function.
-
-This will convert the time-stamp to a usable format.
+This function cleans up the time of the selected messenger data
+so that it is more easily usable in R. It also adds columns for date and
+hour for easy analysis.
 }

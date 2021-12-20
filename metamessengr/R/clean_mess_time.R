@@ -1,9 +1,8 @@
-#' @title Clean selected Facebook Messenger data
+#' @title Clean Selected Facebook Messenger Data's Time
 #'
-#' @description This function cleans up the selected Facebook Messenger data after using the
-#' selection() function.
-#'
-#' This will convert the time-stamp to a usable format.
+#' @description This function cleans up the time of the selected messenger data
+#' so that it is more easily usable in R. It also adds columns for date and
+#' hour for easy analysis.
 #'
 #' @param data The original messenger data that was selected using selection()
 #' @param timezone A character vector with the timezone of the user. Default
