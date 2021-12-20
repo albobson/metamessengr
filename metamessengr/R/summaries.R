@@ -54,8 +54,8 @@ group_sum <- function(data) {
 #' @importFrom magrittr %>%
 #'
 #' @export
-top_words <- function(data, num = 5) {
-  num <- value <- content <- sender <- words <- used <- NULL
+top_words <- function(data) {
+  total <- freq <- value <- content <- sender <- words <- used <- NULL
   grady_augmented <- dplyr::as_tibble(metamessengr::grady_augmented)
   grady_augmented=dplyr::rename(grady_augmented, words=value)
   data = data %>%
@@ -70,14 +70,8 @@ top_words <- function(data, num = 5) {
     dplyr::ungroup() %>%
     dplyr::mutate(sender = base::ifelse(sender=="",NA,sender)) %>%
     stats::na.omit()
-  data = data %>%
+  df = data %>%
     dplyr::group_by(sender) %>%
     dplyr::arrange(dplyr::desc(freq), .by_group = TRUE)
-
-  if(base::is.numeric(num)) {
-    data = data %>%
-      dplyr::slice_max(num)
-  }
-
-data
+df
 }
