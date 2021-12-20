@@ -4,7 +4,7 @@
 \alias{top_words}
 \title{Top Words By User}
 \usage{
-top_words(data, num = 5)
+top_words(data)
 }
 \arguments{
 \item{data}{A cleaned data frame of messenger data}
