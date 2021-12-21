@@ -104,4 +104,8 @@ We can further visualize this by plotting the sentiment over time. The
 plot_senti_time(me_sent)
 ```
 
-We can also plot the density of the sentiment scores before and after the event as well. The default for this plot is to facet wrap by sender, but the function argument `wrap_by=` 
+We can also plot the density of the sentiment scores before and after the event using `plot_mess_dens()`. The default for this plot is to facet wrap by sender, but the function argument `wrap_by=` allows one to change the facet wrap variable.
+
+```{r}
+plot_mess_dens(me_sent)
+```
