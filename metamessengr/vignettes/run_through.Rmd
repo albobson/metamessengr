@@ -92,7 +92,7 @@ Now that we have our associated word sentiments and whether they were sent befor
 First, we can run a t-test on the entire data set to see if there is a difference across all messages 
 
 ```{r}
-t_test(me_sent)
+t_mess(me_sent)
 ```
 
 In this case, we can see that there is a significantly lower sentiment after the event.
