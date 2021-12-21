@@ -12,11 +12,12 @@
 #'
 #' @export
 sender_sum <- function(data) {
-  sender <- sent_to <- NULL
+  sender <- sent_to <- count <- NULL
   data %>%
     dplyr::group_by(sender,sent_to) %>%
     dplyr::summarise(count = dplyr::n(),
-            length = base::sum(length, na.rm = T))
+            length = base::sum(length, na.rm = T)) %>%
+    dplyr::arrange(dplyr::desc(count))
 }
 
 
@@ -35,7 +36,7 @@ sender_sum <- function(data) {
 #'
 #' @export
 group_sum <- function(data) {
-  sent_to <- NULL
+  sent_to <- count <- NULL
   data %>%
     dplyr::group_by(sent_to) %>%
     dplyr::summarise(count = dplyr::n(),

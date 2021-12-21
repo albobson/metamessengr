@@ -12,7 +12,8 @@ group_sum(data)
 }
 \value{
 A tibble summarizing the total number of messages and the total
-number of characters sent in a specific group chat in the dataset.
+number of characters sent in a specific group chat in the dataset, ordered
+by the total number of messages.
 }
 \description{
 Group Chat Message Summary

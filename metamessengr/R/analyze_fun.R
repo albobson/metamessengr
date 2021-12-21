@@ -29,13 +29,16 @@ t_mess <-  function(data){
     dplyr::select(value)
 
   t_test = stats::t.test(x,y)
+  t_test
 
 }
 
-#' @title Plot Sentiment Analysis Over Time per Sender
+#' @title Plot Sentiment Analysis Over Time
 #'
 #' @description This function creates ggplots of Messenger data that have been
-#' run through the get_mess_sentiment function.
+#' run through get_mess_sentiment() and through mess_cut_off(). Facet wrapping
+#' is applied tomake multiple plots, with "sender" being the default variable
+#' to wrap.
 #'
 #' @param data The original messenger data that was selected using selection()
 #'
@@ -43,12 +46,11 @@ t_mess <-  function(data){
 #' and a density plot of each sender's overall sentiment before and after the
 #' event date specified.
 #'
-#' @importFrom dplyr filter select
 #' @importFrom magrittr %>%
 #' @importFrom ggplot2 ggplot aes geom_col facet_wrap geom_density vars
 #'
 #' @export
-plot_mess <- function(data) {
+plot_senti_time <- function(data) {
   timestamp_ms <- value <- event <- vars <- sender <- NULL
 
   event_ts_p =
@@ -57,11 +59,31 @@ plot_mess <- function(data) {
     ggplot2::geom_col(show.legend = F) +
     ggplot2::facet_wrap(ggplot2::vars(sender))
 
-  sentiment_hist =
-    ggplot2::ggplot(data,
-                    ggplot2::aes(value, fill= event, color = event)) +
-    ggplot2::geom_density(position = "dodge", na.rm = T, alpha = .5) +
-    ggplot2::facet_wrap(ggplot2::vars(sender))
-
+  event_ts_p
 }
 
+#' @title Plot Sentiment Analysis Over Time per Sender
+#'
+#' @description This function creates ggplots of Messenger data that have been
+#' run through the get_mess_sentiment function.
+#'
+#' @param data The original messenger data that was selected using selection()
+#' @param wrap_by The variable by which the ggplot will facet wrap
+#'
+#' @return A ggplot density plot of each sender's overall sentiment before and
+#' after the event date specified.
+#'
+#' @importFrom magrittr %>%
+#' @importFrom ggplot2 ggplot aes geom_col facet_wrap geom_density vars
+#'
+#' @export
+plot_mess_dens <- function(data, wrap_by = "sender"){
+  value <- event <- vars <- sender <- NULL
+  sentiment_hist =
+  ggplot2::ggplot(data,
+                  ggplot2::aes(value, fill= event, color = event)) +
+  ggplot2::geom_density(position = "dodge", na.rm = T, alpha = .5) +
+  ggplot2::facet_wrap(ggplot2::vars(wrap_by))
+
+sentiment_hist
+}

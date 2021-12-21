@@ -381,5 +381,4 @@ h + geom_point() +
 
 
 
-
-
+alex <- me_sent[which(me_sent$sender == "Alexander James Robertson"),]

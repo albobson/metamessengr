@@ -1,0 +1,46 @@
+---
+title: "General Set-Up and Usage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{General Set-Up and Usage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+file_loc = "C:/Users/meowy/OneDrive/Desktop/fbm_data_subset"
+```
+
+#### This vignette will walk you through the general set-up and usage of the metamessengr package. 
+
+```{r setup}
+library(metamessengr)
+```
+
+##### Selecting and Reading in Data
+
+The first and most important function of the package is the `mess_sentiment()` function. This function allows one to parse through Facebook's JSON formatted Messenger data and select the most important information - who sent what, what did they send, and when did they send it.
+
+The function is recursive, so all that needs to be specified is the folder that contains all of the downloaded and unzipped data from Facebook. The conversations will be in a file called `"/inbox`. The output will be a data frame with 4 variables: the timestamp, the sender, the content, and which chat it was sent to.
+
+```{r}
+## Enter your file location
+me <- mess_selection(file_loc = file_loc)
+
+me
+```
+
+##### Cleaning Selected Data
+
+The newly imported data needs to be cleaned. This can be done piece-wise, through the use of the `clean_mess_text()` and `clean_mess_time()` functions, or it can be done all at once using `clean_mess_all()`. For most situations, it's best to use `clean_mess_all()` to reduce the potential for user error.
+
+Stop words ("as", "the", "a", etc.) are generally removed before text analysis, as they do not contribute meaningfully to context. 
+
+```{r}
+
+```
