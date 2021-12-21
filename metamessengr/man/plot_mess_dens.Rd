@@ -4,7 +4,7 @@
 \alias{plot_mess_dens}
 \title{Plot Sentiment Analysis Over Time per Sender}
 \usage{
-plot_mess_dens(data, wrap_by = "sender")
+plot_mess_dens(data)
 }
 \arguments{
 \item{data}{The original messenger data that was selected using selection()}

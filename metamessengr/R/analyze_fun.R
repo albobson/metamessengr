@@ -77,13 +77,13 @@ plot_senti_time <- function(data) {
 #' @importFrom ggplot2 ggplot aes geom_col facet_wrap geom_density vars
 #'
 #' @export
-plot_mess_dens <- function(data, wrap_by = "sender"){
+plot_mess_dens <- function(data){
   value <- event <- vars <- sender <- NULL
   sentiment_hist =
   ggplot2::ggplot(data,
                   ggplot2::aes(value, fill= event, color = event)) +
   ggplot2::geom_density(position = "dodge", na.rm = T, alpha = .5) +
-  ggplot2::facet_wrap(ggplot2::vars(wrap_by))
+  ggplot2::facet_wrap(ggplot2::vars(sender))
 
 sentiment_hist
 }

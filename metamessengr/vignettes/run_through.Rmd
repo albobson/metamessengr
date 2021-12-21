@@ -44,7 +44,7 @@ Stop words ("as", "the", "a", etc.) are generally removed before text analysis, 
 The timestamp is by default set to Los Angeles/Pacific time. To set a different timezone, set it using `timezone=`.
 
 ```{r}
-me_clean <- clean_mess_all(me)
+me <- clean_mess_all(me)
 ```
 
 ##### Summarizing the Data
@@ -54,19 +54,19 @@ Now we have a cleaned, usable data set for data analysis. The first thing that w
 First, let's take a look at the senders. How many messages did each person send, and what was the total number of characters sent?
 
 ```{r}
-sender_sum(me_clean)
+sender_sum(me)
 ```
 
 We can also look at the summary of each group. How many messages were sent to the group and what where the total number of characters that were sent?
 
 ```{r}
-group_sum(me_clean)
+group_sum(me)
 ```
 
 Finally, we can also analyze the top words that each person sent, and look at the frequency of those words. The `num=` argument in the function specifies how many top messages you want per person.
 
 ```{r}
-top_words(me_clean, num=5)
+top_words(me, num=5)
 ```
 
 ##### Sentiment Analysis
@@ -78,13 +78,13 @@ We were interested in looking at if there was a difference in overall sentiment 
 Using the `cut_off()` function, we can add a column which denotes if a message was "pre" or "post" an event time.
 
 ```{r}
-me_cut <- mess_cut_off(me_clean, time = "2020-03-01")
+me <- mess_cut_off(me, time = "2020-03-01")
 ```
 
 We can break down each message into one word chunks and associate each word's corresponding sentiment using the `mess_sentiment()` function.
 
 ```{r}
-me_sent <- mess_sentiment(me_cut)
+me <- mess_sentiment(me)
 ```
 
 Now that we have our associated word sentiments and whether they were sent before our specified event, we can run statistical tests on the data and begin visualizations.
@@ -92,7 +92,7 @@ Now that we have our associated word sentiments and whether they were sent befor
 First, we can run a t-test on the entire data set to see if there is a difference across all messages 
 
 ```{r}
-t_mess(me_sent)
+t_mess(me)
 ```
 
 In this case, we can see that there is a significantly lower sentiment after the event.
@@ -101,11 +101,11 @@ We can further visualize this by plotting the sentiment over time. The
 `plot_senti_time()` function will plot the sentiment of each message over time for each sender. Currently, it will facet wrap all senders. Future development of the code will allow more control over which senders to plot.
 
 ```{r}
-plot_senti_time(me_sent)
+plot_senti_time(me)
 ```
 
-We can also plot the density of the sentiment scores before and after the event using `plot_mess_dens()`. The default for this plot is to facet wrap by sender, but the function argument `wrap_by=` allows one to change the facet wrap variable.
+We can also plot the density of the sentiment scores before and after the event using `plot_mess_dens()`. The default for this plot is to facet wrap by sender. In the future, we plan to add an arguement which would allow one to change the facet wrap variable.
 
 ```{r}
-plot_mess_dens(me_sent)
+plot_mess_dens(me)
 ```
