@@ -73,8 +73,35 @@ top_words(me_clean, num=5)
 
 The words that we use have implicit sentiments associated with them. For example, "death" has a negative association, while "money" may have a positive association. There have been many studies looking at the average association of each word. In this Vignette, we will be looking at the sentiment as described by Finn Årup Nielsen. Nielsen associated each word in the English language with a score between -5 and +5. 
 
-We were interested in looking at if there was a difference in overall sentiment used before and after an event. We expected that there would be a dip in the overall sentiment of each message after the beginning of the COVID-19 pandemic (which we are calling ")
+We were interested in looking at if there was a difference in overall sentiment used before and after an event. We expected that there would be a dip in the overall sentiment of each message after the beginning of the COVID-19 pandemic. In this code, we assume the pandemic "started" in the USA on 2020-03-01, since that was around the time that lock-down restrictions took place.
+
+Using the `cut_off()` function, we can add a column which denotes if a message was "pre" or "post" an event time.
 
 ```{r}
-
+me_cut <- mess_cut_off(me_clean, time = "2020-03-01")
 ```
+
+We can break down each message into one word chunks and associate each word's corresponding sentiment using the `mess_sentiment()` function.
+
+```{r}
+me_sent <- mess_sentiment(me_cut)
+```
+
+Now that we have our associated word sentiments and whether they were sent before our specified event, we can run statistical tests on the data and begin visualizations.
+
+First, we can run a t-test on the entire data set to see if there is a difference across all messages 
+
+```{r}
+t_test(me_sent)
+```
+
+In this case, we can see that there is a significantly lower sentiment after the event.
+
+We can further visualize this by plotting the sentiment over time. The 
+`plot_senti_time()` function will plot the sentiment of each message over time for each sender. Currently, it will facet wrap all senders. Future development of the code will allow more control over which senders to plot.
+
+```{r}
+plot_senti_time(me_sent)
+```
+
+We can also plot the density of the sentiment scores before and after the event as well. The default for this plot is to facet wrap by sender, but the function argument `wrap_by=` 
