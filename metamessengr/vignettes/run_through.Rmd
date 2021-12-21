@@ -39,7 +39,41 @@ me
 
 The newly imported data needs to be cleaned. This can be done piece-wise, through the use of the `clean_mess_text()` and `clean_mess_time()` functions, or it can be done all at once using `clean_mess_all()`. For most situations, it's best to use `clean_mess_all()` to reduce the potential for user error.
 
-Stop words ("as", "the", "a", etc.) are generally removed before text analysis, as they do not contribute meaningfully to context. 
+Stop words ("as", "the", "a", etc.) are generally removed before text analysis, as they do not contribute meaningfully to context. These are removed during the cleaning process. If there are additional words that you would like to remove, use the `custom_clean` variable, which is by default set to `NULL`. 
+
+The timestamp is by default set to Los Angeles/Pacific time. To set a different timezone, set it using `timezone=`.
+
+```{r}
+me_clean <- clean_mess_all(me)
+```
+
+##### Summarizing the Data
+
+Now we have a cleaned, usable data set for data analysis. The first thing that we can do is run a few general summaries of the data. 
+
+First, let's take a look at the senders. How many messages did each person send, and what was the total number of characters sent?
+
+```{r}
+sender_sum(me_clean)
+```
+
+We can also look at the summary of each group. How many messages were sent to the group and what where the total number of characters that were sent?
+
+```{r}
+group_sum(me_clean)
+```
+
+Finally, we can also analyze the top words that each person sent, and look at the frequency of those words. The `num=` argument in the function specifies how many top messages you want per person.
+
+```{r}
+top_words(me_clean, num=5)
+```
+
+##### Sentiment Analysis
+
+The words that we use have implicit sentiments associated with them. For example, "death" has a negative association, while "money" may have a positive association. There have been many studies looking at the average association of each word. In this Vignette, we will be looking at the sentiment as described by Finn Årup Nielsen. Nielsen associated each word in the English language with a score between -5 and +5. 
+
+We were interested in looking at if there was a difference in overall sentiment used before and after an event. We expected that there would be a dip in the overall sentiment of each message after the beginning of the COVID-19 pandemic (which we are calling ")
 
 ```{r}
 

@@ -54,13 +54,13 @@ group_sum <- function(data) {
 #' @return A tibble of the number of dictionary words used by each person and
 #' the total number of times used.
 #'
-#' @importFrom dplyr as_tibble rename semi_join group_by summarise ungroup mutate arrange desc n filter
+#' @importFrom dplyr as_tibble rename semi_join group_by summarise ungroup mutate arrange desc n filter slice
 #' @importFrom tidytext unnest_tokens
 #' @importFrom stats na.omit
 #' @importFrom magrittr %>%
 #'
 #' @export
-top_words <- function(data) {
+top_words <- function(data, num) {
   total <- freq <- value <- content <- sender <- words <- used <- NULL
   grady_augmented <- dplyr::as_tibble(metamessengr::grady_augmented)
   grady_augmented=dplyr::rename(grady_augmented, words=value)
@@ -79,5 +79,9 @@ top_words <- function(data) {
   df = data %>%
     dplyr::group_by(sender) %>%
     dplyr::arrange(dplyr::desc(freq), .by_group = TRUE)
+  df = data %>%
+    dplyr::group_by(sender) %>%
+    dplyr::arrange(dplyr::desc(freq), .by_group = TRUE) %>%
+    dplyr::slice(1:num)
 df
 }

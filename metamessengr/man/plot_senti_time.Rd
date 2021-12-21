@@ -4,12 +4,10 @@
 \alias{plot_senti_time}
 \title{Plot Sentiment Analysis Over Time}
 \usage{
-plot_senti_time(data, wrap_by = "sender")
+plot_senti_time(data)
 }
 \arguments{
 \item{data}{The original messenger data that was selected using selection()}
-
-\item{wrap_by}{The variable by which the ggplot will facet wrap}
 }
 \value{
 A ggplot column-plot of the sentiment before and after an event,
