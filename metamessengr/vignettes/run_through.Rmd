@@ -28,7 +28,7 @@ The first and most important function of the package is the `mess_sentiment()` f
 
 The function is recursive, so all that needs to be specified is the folder that contains all of the downloaded and unzipped data from Facebook. The conversations will be in a file called `"/inbox`. The output will be a data frame with 4 variables: the timestamp, the sender, the content, and which chat it was sent to.
 
-```{r}
+```{r, results="hide"}
 ## Enter your file location
 me <- mess_selection(file_loc = file_loc)
 ```
@@ -41,7 +41,7 @@ Stop words ("as", "the", "a", etc.) are generally removed before text analysis, 
 
 The timestamp is by default set to Los Angeles/Pacific time. To set a different timezone, set it using `timezone=`.
 
-```{r}
+```{r, results="hide"}
 me <- clean_mess_all(me)
 ```
 
@@ -64,7 +64,7 @@ head(group_sum(me))
 Finally, we can also analyze the top words that each person sent, and look at the frequency of those words. The `num=` argument in the function specifies how many top messages you want per person.
 
 ```{r}
-head(top_words(me, num=5))
+head(top_words(me, num=3))
 ```
 
 ##### Sentiment Analysis
@@ -75,13 +75,13 @@ We were interested in looking at if there was a difference in overall sentiment 
 
 Using the `cut_off()` function, we can add a column which denotes if a message was "pre" or "post" an event time.
 
-```{r}
+```{r, results="hide"}
 me <- mess_cut_off(me, time = "2020-03-01")
 ```
 
 We can break down each message into one word chunks and associate each word's corresponding sentiment using the `mess_sentiment()` function.
 
-```{r}
+```{r, results="hide"}
 me <- mess_sentiment(me)
 ```
 
