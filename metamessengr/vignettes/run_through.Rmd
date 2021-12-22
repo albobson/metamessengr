@@ -31,8 +31,6 @@ The function is recursive, so all that needs to be specified is the folder that 
 ```{r}
 ## Enter your file location
 me <- mess_selection(file_loc = file_loc)
-
-me
 ```
 
 ##### Cleaning Selected Data
@@ -54,19 +52,19 @@ Now we have a cleaned, usable data set for data analysis. The first thing that w
 First, let's take a look at the senders. How many messages did each person send, and what was the total number of characters sent?
 
 ```{r}
-sender_sum(me)
+head(sender_sum(me))
 ```
 
 We can also look at the summary of each group. How many messages were sent to the group and what where the total number of characters that were sent?
 
 ```{r}
-group_sum(me)
+head(group_sum(me))
 ```
 
 Finally, we can also analyze the top words that each person sent, and look at the frequency of those words. The `num=` argument in the function specifies how many top messages you want per person.
 
 ```{r}
-top_words(me, num=5)
+head(top_words(me, num=5))
 ```
 
 ##### Sentiment Analysis
