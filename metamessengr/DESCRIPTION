@@ -23,8 +23,6 @@ Imports:
     scales,
     chron,
     lexicon,
-    ggraph,
-    igraph,
     tm,
     magrittr
 Depends: 
